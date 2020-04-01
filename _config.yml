@@ -1,7 +1,7 @@
 lang: "de"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "Covid 19 im Kreis Höxter" # the name of your site, e.g. ACME Corp.
 
 defaults:
   - scope:
@@ -10,7 +10,16 @@ defaults:
     values:
       layout: "commune"
   - scope:
+      path: "index"
+    values:
+      layout: "home"
+  - scope:
       path: ""
+      type: "pages"
     values:
       layout: "default"
+
+collections:
+  communes:
+    output: true
 

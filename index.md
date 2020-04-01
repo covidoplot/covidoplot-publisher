@@ -1,7 +1,8 @@
 ---
-title: "Happy Jekylling!"
+layout: default
+title: "Neuigkeiten"
 ---
 
-## You're ready to go!
+<h1>Neuigkeiten zum Coronavirus</h1>
 
-Start developing your Jekyll website.
+
