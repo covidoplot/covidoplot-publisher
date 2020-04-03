@@ -1,3 +1,4 @@
 ---
 title: Marienmünster
+ident: marienmuenster
 ---

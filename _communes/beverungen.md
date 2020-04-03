@@ -1,3 +1,4 @@
 ---
 title: Beverungen
+ident: beverungen
 ---
