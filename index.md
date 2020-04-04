@@ -5,10 +5,29 @@ title: "Neuigkeiten"
 
 <figure class="figure">
   <img src="/assets/plots/district-hoexter-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt den Verlauf in den Gemeinden im Kreis.">
-  <figcaption class="figure-caption">Bestätigte Infektionen und Genesungen ergeben zusammen alle Fälle.</figcaption>
+  <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
 </figure>
 
 ## Neuigkeiten
+
+### Neue Plots
+
+    3.April 2020
+
+Wie hoch ist die Dichte der Erkrankten um mich herum? [Ein neues Diagram](/kreis-hoexter) 
+zeigt die Dichte der Erkrankten für die einzlenen Gemeinden im Kreis Höxter. 
+
+Noch ein paar weitere Plots sind heute hinzu gekommen.
+
+
+### Der erste Todesfall trifft ein Seniorenheim
+
+    2.April 2020
+    
+Das [Westfalenblatt berichtet](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Warburg/4180337-80-Jaehriger-lebte-im-Franz-Jordan-Haus-Keine-weiteren-Faelle-bekannt-Erstes-Corona-Opfer-in-Warburg), 
+dass es sich bei dem verstorbenen Patienten um einen 80-jährigen Bewohner des Warburger 
+Seniorenzentrums St. Johannes handelt. Er hatte verschiedene Vorerkrankungen. 
+Es seien keine weiteren Fälle [in dieser Einrichtung?] bekannt.
 
 ### Erster Todesfall im Kreis Höxter
 
