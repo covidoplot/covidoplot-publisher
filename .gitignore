@@ -1,4 +1,5 @@
 .idea/
 .jekyll-cache/
 _site/
+_data/
 assets/plots/
