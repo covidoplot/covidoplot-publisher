@@ -1,0 +1,6 @@
+<nav>
+      <ul class="list-unstyled">
+            {%- assign social = site.social -%}
+            {%- if social.twitter -%}<li><a rel="me" href="https://twitter.com/{{ social.twitter | cgi_escape | escape }}" title="{{ social.twitter | escape }}">Twitter: {{ social.twitter | escape }}</a></li>{%- endif -%}
+      </ul>
+</nav>

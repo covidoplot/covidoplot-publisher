@@ -2,14 +2,14 @@
 title: "Kreis Höxter"
 ---
 
-<h2>Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
+<h2 id="stacked">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
 
 <figure class="figure shadow mb-5 mt-4 p-3">
   <img src="/assets/plots/district-hoexter-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt den Verlauf in den Gemeinden im Kreis.">
   <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
 </figure>
 
-<h2>Wie vergleichen sich die Gemeinden?</h2>
+<h2 id="communes">Wie vergleichen sich die Gemeinden?</h2>
 
 <figure class="figure shadow mb-5 mt-4 p-3">
   <img src="/assets/plots/district-hoexter-compared-communes-absolutely.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
@@ -21,7 +21,7 @@ title: "Kreis Höxter"
   <figcaption class="figure-caption">Anzahl bestätigter Infektionen in den einzelnen Gemeinden des Kreises je 100.000 Einwohnern.</figcaption>
 </figure>
 
-<h2>Wie hoch ist das Risiko?</h2>
+<h2 id="risc">Wie hoch ist das Risiko?</h2>
 
 <figure class="figure shadow mb-5 mt-4 p-3">
   <img src="/assets/plots/district-hoexter-compared-communes-relatively-for-active-cases.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
@@ -36,7 +36,7 @@ title: "Kreis Höxter"
 
 <p>TODO</p>
 
-<h2>Wie sehen die Zahlen aus?</h2>
+<h2 id="numbers">Wie sehen die Zahlen aus?</h2>
 
 <div class="shadow mb-5 mt-4 p-3">
 <table class="table table-bordered table-hover table-sm">

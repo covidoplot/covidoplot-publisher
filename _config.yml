@@ -8,6 +8,9 @@ author: Elmar Hinz
 webmaster_verifications:
   google: Jy9GjP1zJSZb24WTJkI5fc6zPYqWLYs0bo6EZXmsmKY
 
+social:
+  twitter: covidoplot
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap

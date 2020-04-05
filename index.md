@@ -3,6 +3,30 @@ layout: default
 title: "Neuigkeiten"
 ---
 
+<div class="container shadow mb-5 mt-4 p-3">
+    {% assign current = site.data.hoexter-district.last %}
+    <table class="table table-bordered table-dark">
+        <caption>Bestätigte Fälle im Kreis Höxter am {{ current. date }} um 12 Uhr</caption>
+        <thead class="">
+            <tr>
+                <th>Aktiv</th>
+                <th>Genesen</th>
+                <th>Verstorben</th>
+                <th>Summe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ current.active }}</td>
+                <td>{{ current.recovered }}</td>
+                <td>{{ current.died }}</td>
+                <td><strong>{{ current.cumulated }}</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><a href="{% link kreis-hoexter.md %}#numbers">mehr Zahlen ...</a></p>
+</div>
+
 <figure class="figure shadow mb-5 mt-4 p-3">
   <img src="/assets/plots/district-hoexter-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt den Verlauf in den Gemeinden im Kreis.">
   <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
@@ -14,7 +38,7 @@ title: "Neuigkeiten"
 
     3.April 2020
 
-Wie hoch ist die Dichte der Erkrankten um mich herum? [Ein neues Diagram](/kreis-hoexter) 
+Wie hoch ist die Dichte der Erkrankten um mich herum? [Ein neues Diagram](/kreis-hoexter.html#risc) 
 zeigt die Dichte der Erkrankten für die einzlenen Gemeinden im Kreis Höxter. 
 
 Noch ein paar weitere Plots sind heute hinzu gekommen.
