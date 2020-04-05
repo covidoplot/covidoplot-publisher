@@ -38,8 +38,8 @@ title: "Kreis Höxter"
 
 <h2>Wie sehen die Zahlen aus?</h2>
 
-
-<table class="table table-bordered table-hover table-sm mb-5 mt-4 p-3 shadow">
+<div class="shadow mb-5 mt-4 p-3">
+<table class="table table-bordered table-hover table-sm">
 <caption> Bestätigte Fälle im Kreis Höxter </caption>
     <thead class="thead-light">
     <tr>
@@ -52,8 +52,13 @@ title: "Kreis Höxter"
     </thead>
     <tbody>
         {% for day in site.data.hoexter-district %}
+            {% if day.date contains 'Sat' or day.date contains 'Sun' %}
+                {% assign cls = "table-primary" %}
+            {% else %}
+                {% assign cls = "table-secondary" %}
+            {% endif %}
             <tr>
-                <td class="table-primary">{{day.date}}</td>
+                <td class="{{ cls }}">{{day.date}}</td>
                 <td>{{day.active}}</td>
                 <td>{{day.recovered}}</td>
                 <td>{{day.died}}</td>
@@ -62,3 +67,4 @@ title: "Kreis Höxter"
         {% endfor %} 
     </tbody>
 </table>
+</div>

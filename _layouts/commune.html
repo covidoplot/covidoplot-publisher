@@ -6,7 +6,7 @@ layout: default
 
 <h2>Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
 
-<figure class="figure">
+<figure class="figure shadow mb-5 mt-4 p-3">
   <img src="/assets/plots/{{ page.ident }}-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
   <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
 </figure>
@@ -16,3 +16,35 @@ layout: default
 <p>TODO</p>
 
 
+<h2>Wie sehen die Zahlen aus?</h2>
+
+<div class="shadow mb-5 mt-4 p-3">
+  <table class="table table-bordered table-hover table-sm">
+    <caption> Bestätigte Fälle in {{ page.title }}</caption>
+    <thead class="thead-light">
+    <tr>
+      <th>Datum</th>
+      <th>Aktive</th>
+      <th>Genesene</th>
+      <th>Verstorbene</th>
+      <th>Summe</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for day in site.data.hoexter[page.ident] offset:10 %}
+    {% if day.date contains 'Sat' or day.date contains 'Sun' %}
+    {% assign cls = "table-primary" %}
+    {% else %}
+    {% assign cls = "table-secondary" %}
+    {% endif %}
+    <tr>
+      <td class="{{ cls }}">{{day.date}}</td>
+      <td>{{day.active}}</td>
+      <td>{{day.recovered}}</td>
+      <td>{{day.died}}</td>
+      <td class="table-secondary">{{day.cumulated}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
