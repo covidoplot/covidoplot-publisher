@@ -1,7 +1,16 @@
-lang: "de"
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+exclude: ["LICENSE.txt", "README.md"]
+lang: de
+url: https://covidoplot.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Covid 19 im Kreis Höxter" # the name of your site, e.g. ACME Corp.
+title: Covid 19 im Kreis Höxter
+description: Daten und Diagramme zur Coronavirus-Krankheit 2019 im Kreis Höxter
+author: Elmar Hinz
+webmaster_verifications:
+  google: Jy9GjP1zJSZb24WTJkI5fc6zPYqWLYs0bo6EZXmsmKY
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   - scope:
