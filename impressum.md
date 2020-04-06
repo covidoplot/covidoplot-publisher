@@ -19,7 +19,7 @@ title: Impressum
     Freiherr-vom-Stein-Str.1
     33014 Bad Driburg
 
-## Verbraucherstreitbeilegung/Universalschlichtungsstelle
+## Verbraucherstreitbeilegung / Universalschlichtungsstelle
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 ## Haftung für Inhalte
