@@ -9,8 +9,8 @@ title: "Neuigkeiten"
         <caption>Bestätigte Fälle im Kreis Höxter am {{ current. date }} um 12 Uhr</caption>
         <thead class="">
             <tr>
-                <th>Aktiv</th>
-                <th>Genesen</th>
+                <th>Krank</th>
+                <th>Wieder gesund</th>
                 <th>Verstorben</th>
                 <th>Summe</th>
             </tr>
