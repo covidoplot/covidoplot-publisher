@@ -6,14 +6,14 @@ layout: default
 
 <div class="container shadow mb-5 mt-4 p-3">
   {% assign current = site.data.hoexter[page.ident].last %}
-  <table class="table table-bordered table-dark">
-    <caption>Bestätigte Fälle in {{ page.title}} am {{ current. date }} um 12 Uhr</caption>
+  <table class="table table-bordered">
+    <caption>Bestätigte Fälle in {{ page.title}} am {{ current. date }}</caption>
     <thead>
     <tr>
-      <th>Krank</th>
-      <th>Wieder gesund</th>
-      <th>Verstorben</th>
-      <th>Summe</th>
+      <th class="table-dark">erkrankt</th>
+      <th class="table-dark">wieder gesund</th>
+      <th class="table-dark">verstorben</th>
+      <th class="table-dark">alle Fälle</th>
     </tr>
     </thead>
     <tbody>
@@ -49,9 +49,9 @@ layout: default
     <thead class="thead-light">
     <tr>
       <th>Datum</th>
-      <th>Aktive</th>
-      <th>Genesene</th>
-      <th>Verstorbene</th>
+      <th>erkrankt</th>
+      <th>wieder gesund</th>
+      <th>verstorben</th>
       <th>Summe</th>
     </tr>
     </thead>

@@ -1,0 +1,116 @@
+---
+title: "Kreis Höxter"
+---
+
+<div class="shadow mb-5 mt-4 p-3" id="overview">
+    {% assign date = site.data.hoexter-district.last.date %}
+    <table class="table table-bordered table-sm">
+        <caption> Bestätigte Fälle im Kreis Höxter am {{ date }}</caption>
+        <thead class="">
+        <tr class="">
+            <th class="table-dark">Gemeinde</th>
+            <th class="table-dark">erkrankt</th>
+            <th class="table-dark">wieder gesund</th>
+            <th class="table-dark">verstorben</th>
+            <th class="table-dark">alle Fälle</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% assign sorted = site.data.hoexter | sort %}
+        {% for commune in sorted %}
+        {% assign id = commune.first %}
+        {% assign current = commune.last.last %}
+        <tr>
+            <th scope="row" class="table-primary">{{site.data.ident[id]}}</th>
+            <td>{{current.active}}</td>
+            <td>{{current.recovered}}</td>
+            <td>{{current.died}}</td>
+            <td class="table-secondary">{{current.cumulated}}</td>
+        </tr>
+        {% endfor %}
+        {% assign current = site.data.hoexter-district.last %}
+        </tbody>
+        <tfoot>
+        <tr class="">
+            <th scope="row" class="table-secondary">Insgesamt</th>
+            <td class="table-secondary">{{current.active}}</td>
+            <td class="table-secondary">{{current.recovered}}</td>
+            <td class="table-secondary">{{current.died}}</td>
+            <td class="table-secondary"><strong>{{current.cumulated}}</strong></td>
+        </tr>
+        </tfoot>
+    </table>
+    <p><a href="#numbers">mehr Zahlen ...</a></p>
+</div>
+
+<h2 id="stacked">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
+
+<figure class="figure shadow mb-5 mt-4 p-3">
+    <img src="/assets/plots/district-hoexter-summary.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
+    <figcaption class="figure-caption">Bestätigte Fälle von Covid 19 im Kreis Höxter</figcaption>
+</figure>
+
+<figure class="figure shadow mb-5 mt-4 p-3">
+    <img src="/assets/plots/district-hoexter-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt den Verlauf in den Gemeinden im Kreis.">
+    <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
+</figure>
+
+<h2 id="communes">Wie vergleichen sich die Gemeinden?</h2>
+
+<figure class="figure shadow mb-5 mt-4 p-3">
+    <img src="/assets/plots/district-hoexter-compared-communes-absolutely.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+    <figcaption class="figure-caption">Anzahl bestätigter Infektionen in den einzelnen Gemeinden des Kreises.</figcaption>
+</figure>
+
+<figure class="figure shadow mb-5 mt-4 p-3">
+    <img src="/assets/plots/district-hoexter-compared-communes-relatively.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+    <figcaption class="figure-caption">Anzahl bestätigter Infektionen in den einzelnen Gemeinden des Kreises je 100.000 Einwohnern.</figcaption>
+</figure>
+
+<h2 id="risc">Wie hoch ist das Risiko?</h2>
+
+<figure class="figure shadow mb-5 mt-4 p-3">
+    <img src="/assets/plots/district-hoexter-compared-communes-relatively-for-active-cases.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+    <figcaption class="figure-caption">Die Dichte der aktiv Infizierten in den einzelnen Gemeinden.</figcaption>
+</figure>
+
+<h2>Wie stark ist die Zunahme der Infektionen?</h2>
+
+<p>TODO</p>
+
+<h2>Wie hoch ist der Anteil der Infizierten im Vergleich?</h2>
+
+<p>TODO</p>
+
+<h2 id="numbers">Wie sehen die Zahlen aus?</h2>
+
+<div class="shadow mb-5 mt-4 p-3">
+    <table class="table table-bordered table-hover table-sm">
+        <caption> Bestätigte Fälle im Kreis Höxter </caption>
+        <thead>
+        <tr>
+            <th class="table-dark">Datum</th>
+            <th class="table-dark">erkrankt</th>
+            <th class="table-dark">wieder gesund</th>
+            <th class="table-dark">verstorben</th>
+            <th class="table-dark">Summe</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for day in site.data.hoexter-district %}
+        {% if day.date contains 'Sat' or day.date contains 'Sun' %}
+        {% assign cls = "table-primary" %}
+        {% else %}
+        {% assign cls = "table-secondary" %}
+        {% endif %}
+        <tr>
+            <td class="{{ cls }}">{{day.date}}</td>
+            <td>{{day.active}}</td>
+            <td>{{day.recovered}}</td>
+            <td>{{day.died}}</td>
+            <td class="table-secondary">{{day.cumulated}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
