@@ -6,7 +6,7 @@ layout: default
 
 <div class="container shadow mb-5 mt-4 p-3">
   {% assign current = site.data.hoexter[page.ident].last %}
-  <table class="table table-bordered">
+  <table class="table table-bordered" id="today">
     <caption>Bestätigte Fälle in {{ page.title}} am {{ current. date }}</caption>
     <thead>
     <tr>
@@ -31,10 +31,14 @@ layout: default
 
 <h2>Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
 
-<figure class="figure shadow mb-5 mt-4 p-3">
-  <img src="/assets/plots/{{ page.ident }}-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
-  <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
-</figure>
+<div>
+  <figure class="figure shadow mb-3 mt-4 p-3" id="stacked">
+    <img src="/assets/plots/{{ page.ident }}-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+    <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
+  </figure>
+  {% assign title = 'Diagramm Bestätigte Fälle von Covid-19 in ' | append: page.title %}
+  {% include cc.html title = title %}
+</div>
 
 <h2>Wie hoch ist der Anteil der Infizierten im Vergleich?</h2>
 
@@ -43,33 +47,37 @@ layout: default
 
 <h2 id="numbers">Wie sehen die Zahlen aus?</h2>
 
-<div class="shadow mb-5 mt-4 p-3">
-  <table class="table table-bordered table-hover table-sm">
-    <caption> Bestätigte Fälle in {{ page.title }}</caption>
-    <thead class="thead-light">
-    <tr>
-      <th>Datum</th>
-      <th>erkrankt</th>
-      <th>wieder gesund</th>
-      <th>verstorben</th>
-      <th>Summe</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for day in site.data.hoexter[page.ident] offset:10 %}
-    {% if day.date contains 'Sat' or day.date contains 'Sun' %}
-    {% assign cls = "table-primary" %}
-    {% else %}
-    {% assign cls = "table-secondary" %}
-    {% endif %}
-    <tr>
-      <td class="{{ cls }}">{{day.date}}</td>
-      <td>{{day.active}}</td>
-      <td>{{day.recovered}}</td>
-      <td>{{day.died}}</td>
-      <td class="table-secondary">{{day.cumulated}}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-  </table>
+<div>
+  <div class="shadow mb-3 mt-4 p-3">
+    <table class="table table-bordered table-hover table-sm">
+      <caption> Bestätigte Fälle in {{ page.title }}</caption>
+      <thead class="thead-light">
+      <tr>
+        <th>Datum</th>
+        <th>erkrankt</th>
+        <th>wieder gesund</th>
+        <th>verstorben</th>
+        <th>Summe</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for day in site.data.hoexter[page.ident] offset:10 %}
+      {% if day.date contains 'Sat' or day.date contains 'Sun' %}
+      {% assign cls = "table-primary" %}
+      {% else %}
+      {% assign cls = "table-secondary" %}
+      {% endif %}
+      <tr>
+        <td class="{{ cls }}">{{day.date}}</td>
+        <td>{{day.active}}</td>
+        <td>{{day.recovered}}</td>
+        <td>{{day.died}}</td>
+        <td class="table-secondary">{{day.cumulated}}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% assign title = 'Tabelle Bestätigte Fälle von Covid-19 in ' | append: page.title  %}
+  {% include cc.html title = title %}
 </div>

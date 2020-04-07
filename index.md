@@ -5,7 +5,7 @@ title: "Neuigkeiten"
 
 <div class="container shadow mb-5 mt-4 p-3">
     {% assign current = site.data.hoexter-district.last %}
-    <table class="table table-bordered table-ligth">
+    <table class="table table-bordered table-ligth" id="today">
         <caption>Bestätigte Fälle im Kreis Höxter am {{ current. date }}</caption>
         <thead class="">
             <tr>
@@ -27,7 +27,7 @@ title: "Neuigkeiten"
     <p><a href="{{ '/kreis-hoexter' | relative_url }}#overview">mehr Zahlen ...</a></p>
 </div>
 
-<figure class="figure shadow mb-5 mt-4 p-3">
+<figure class="figure shadow mb-5 mt-4 p-3" id="summary">
   <img src="/assets/plots/district-hoexter-summary.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
   <figcaption class="figure-caption">Bestätigte Fälle von Covid 19 im Kreis Höxter</figcaption>
 </figure>

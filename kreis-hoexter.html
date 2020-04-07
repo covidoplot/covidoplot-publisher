@@ -2,7 +2,7 @@
 title: "Kreis Höxter"
 ---
 
-<div class="shadow mb-5 mt-4 p-3" id="overview">
+<div class="shadow mb-5 mt-4 p-3" id="today">
     {% assign date = site.data.hoexter-district.last.date %}
     <table class="table table-bordered table-sm">
         <caption> Bestätigte Fälle im Kreis Höxter am {{ date }}</caption>
@@ -43,36 +43,53 @@ title: "Kreis Höxter"
     <p><a href="#numbers">mehr Zahlen ...</a></p>
 </div>
 
-<h2 id="stacked">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
+<h2 id="overview">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
 
-<figure class="figure shadow mb-5 mt-4 p-3">
-    <img src="/assets/plots/district-hoexter-summary.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
-    <figcaption class="figure-caption">Bestätigte Fälle von Covid 19 im Kreis Höxter</figcaption>
-</figure>
+<div id="summary">
+    <figure class="figure shadow mb-3 mt-4 p-3">
+        <img src="/assets/plots/district-hoexter-summary.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
+        <figcaption class="figure-caption">
+            Bestätigte Fälle von Covid 19 im Kreis Höxter
+        </figcaption>
+    </figure>
+    {% include cc.html title = 'Diagramm Bestätigte Fälle von Covid-19 im Kreis Höxter (Übersicht)' %}
+</div>
 
-<figure class="figure shadow mb-5 mt-4 p-3">
-    <img src="/assets/plots/district-hoexter-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt den Verlauf in den Gemeinden im Kreis.">
-    <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
-</figure>
+<div id="stacked">
+    <figure class="figure shadow mb-3 mt-4 p-3">
+        <img src="/assets/plots/district-hoexter-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt den Verlauf in den Gemeinden im Kreis.">
+        <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
+    </figure>
+    {% include cc.html title = 'Diagramm Bestätigte Fälle von Covid-19 im Kreis Höxter (gestapelt)' %}
+</div>
 
 <h2 id="communes">Wie vergleichen sich die Gemeinden?</h2>
 
-<figure class="figure shadow mb-5 mt-4 p-3">
-    <img src="/assets/plots/district-hoexter-compared-communes-absolutely.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
-    <figcaption class="figure-caption">Anzahl bestätigter Infektionen in den einzelnen Gemeinden des Kreises.</figcaption>
-</figure>
+<div id="communes-absolute">
+    <figure class="figure shadow mb-3 mt-4 p-3">
+        <img src="/assets/plots/district-hoexter-compared-communes-absolutely.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+        <figcaption class="figure-caption">Anzahl bestätigter Infektionen in den einzelnen Gemeinden des Kreises.</figcaption>
+    </figure>
+    {% include cc.html title = 'Diagramm Bestätigte Fälle von Covid-19 in einzelnen Gemeinden des Kreises Höxter (absolut)' %}
+</div>
 
-<figure class="figure shadow mb-5 mt-4 p-3">
-    <img src="/assets/plots/district-hoexter-compared-communes-relatively.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
-    <figcaption class="figure-caption">Anzahl bestätigter Infektionen in den einzelnen Gemeinden des Kreises je 100.000 Einwohnern.</figcaption>
-</figure>
+<div id="communes-relative">
+    <figure class="figure shadow mb-3 mt-4 p-3">
+        <img src="/assets/plots/district-hoexter-compared-communes-relatively.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+        <figcaption class="figure-caption">Anzahl bestätigter Infektionen in den einzelnen Gemeinden des Kreises je 100.000 Einwohnern.</figcaption>
+    </figure>
+    {% include cc.html title = 'Diagramm Bestätigte Fälle von Covid-19 in einzelnen Gemeinden des Kreises Höxter (relativ)' %}
+</div>
 
 <h2 id="risc">Wie hoch ist das Risiko?</h2>
 
-<figure class="figure shadow mb-5 mt-4 p-3">
-    <img src="/assets/plots/district-hoexter-compared-communes-relatively-for-active-cases.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
-    <figcaption class="figure-caption">Die Dichte der aktiv Infizierten in den einzelnen Gemeinden.</figcaption>
-</figure>
+<div>
+    <figure class="figure shadow mb-3 mt-4 p-3">
+        <img src="/assets/plots/district-hoexter-compared-communes-relatively-for-active-cases.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+        <figcaption class="figure-caption">Die Dichte der aktiv Infizierten in den einzelnen Gemeinden.</figcaption>
+    </figure>
+    {% include cc.html title = 'Diagramm Dichte an mit Covid-19 erkrankten in einzelnen Gemeinden des Kreises Höxter' %}
+</div>
 
 <h2>Wie stark ist die Zunahme der Infektionen?</h2>
 
@@ -84,7 +101,7 @@ title: "Kreis Höxter"
 
 <h2 id="numbers">Wie sehen die Zahlen aus?</h2>
 
-<div class="shadow mb-5 mt-4 p-3">
+<div class="shadow mb-3 mt-4 p-3">
     <table class="table table-bordered table-hover table-sm">
         <caption> Bestätigte Fälle im Kreis Höxter </caption>
         <thead>
@@ -114,3 +131,4 @@ title: "Kreis Höxter"
         </tbody>
     </table>
 </div>
+{% include cc.html title = 'Tabelle Bestätigte Fälle von Covid-19 im Kreis Höxter' %}
