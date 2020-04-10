@@ -1,0 +1,24 @@
+<div class="container shadow mb-5 mt-4 p-3" id="today">
+    {% assign id = 'commune-' | append: page.ident %}
+    {% assign current = site.data[id].last %}
+    <table class="table table-bordered">
+        <caption>Bestätigte Fälle in {{ page.title}} am {{ current.date | date: '%d. %B %Y' }}</caption>
+        <thead>
+        <tr>
+            <th class="table-dark">erkrankt</th>
+            <th class="table-dark">wieder gesund</th>
+            <th class="table-dark">verstorben</th>
+            <th class="table-dark">alle Fälle</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{ current.ill }}</td>
+            <td>{{ current.recovered }}</td>
+            <td>{{ current.dead }}</td>
+            <td><strong>{{ current.confirmed }}</strong></td>
+        </tr>
+        </tbody>
+    </table>
+    <p><a href="#numbers">mehr Zahlen ...</a></p>
+</div>

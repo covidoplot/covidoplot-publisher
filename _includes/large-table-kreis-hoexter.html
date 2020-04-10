@@ -1,0 +1,30 @@
+<div class="shadow mb-3 mt-4 p-3">
+    <table class="table table-bordered table-hover table-sm">
+        <caption> Bestätigte Fälle im Kreis Höxter </caption>
+        <thead>
+        <tr>
+            <th class="table-dark">Datum</th>
+            <th class="table-dark">erkrankt</th>
+            <th class="table-dark">wieder gesund</th>
+            <th class="table-dark">verstorben</th>
+            <th class="table-dark">Summe</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for day in site.data.district-hoexter %}
+        {% if day.date contains 'Sat' or day.date contains 'Sun' %}
+        {% assign cls = "table-primary" %}
+        {% else %}
+        {% assign cls = "table-secondary" %}
+        {% endif %}
+        <tr>
+            <td class="{{ cls }}">{{ day.date | date: '%d. %B' }}</td>
+            <td>{{day.ill}}</td>
+            <td>{{day.recovered}}</td>
+            <td>{{day.dead}}</td>
+            <td class="table-secondary">{{day.confirmed}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

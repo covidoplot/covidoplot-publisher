@@ -3,32 +3,10 @@ layout: default
 title: "Neuigkeiten"
 ---
 
-<div class="container shadow mb-5 mt-4 p-3">
-    {% assign current = site.data.hoexter-district.last %}
-    <table class="table table-bordered table-ligth" id="today">
-        <caption>Bestätigte Fälle im Kreis Höxter am {{ current. date }}</caption>
-        <thead class="">
-            <tr>
-                <th class="table-dark">erkrankt</th>
-                <th class="table-dark">wieder gesund</th>
-                <th class="table-dark">verstorben</th>
-                <th class="table-dark">alle Fälle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{{ current.active }}</td>
-                <td>{{ current.recovered }}</td>
-                <td>{{ current.died }}</td>
-                <td><strong>{{ current.cumulated }}</strong></td>
-            </tr>
-        </tbody>
-    </table>
-    <p><a href="{{ '/kreis-hoexter' | relative_url }}#overview">mehr Zahlen ...</a></p>
-</div>
+{% include small-table-index.html %}
 
 <figure class="figure shadow mb-5 mt-4 p-3" id="summary">
-  <img src="/assets/plots/district-hoexter-summary.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
+  <img src="/assets/plots/district-hoexter-overview.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
   <figcaption class="figure-caption">Bestätigte Fälle von Covid 19 im Kreis Höxter</figcaption>
 </figure>
 

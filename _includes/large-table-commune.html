@@ -1,0 +1,37 @@
+<div id="numbers">
+    <div class="shadow mb-3 mt-4 p-3">
+        <table class="table table-bordered table-hover table-sm">
+            <caption> Bestätigte Fälle in {{ page.title }}</caption>
+            <thead class="thead-light">
+            <tr>
+                <th>Datum</th>
+                <th>erkrankt</th>
+                <th>wieder gesund</th>
+                <th>verstorben</th>
+                <th>Summe</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% assign id = 'commune-' | append: page.ident %}
+            {% assign table = site.data[id] %}
+
+            {% for day in table offset:10 %}
+            {% if day.date contains 'Sat' or day.date contains 'Sun' %}
+            {% assign cls = "table-primary" %}
+            {% else %}
+            {% assign cls = "table-secondary" %}
+            {% endif %}
+            <tr>
+                <td class="{{ cls }}">{{day.date | date: '%d. %B' }}</td>
+                <td>{{day.ill}}</td>
+                <td>{{day.recovered}}</td>
+                <td>{{day.dead}}</td>
+                <td class="table-secondary">{{day.confirmed}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% assign title = 'Tabelle Bestätigte Fälle von Covid-19 in ' | append: page.title  %}
+    {% include cc.html title = title %}
+</div>
