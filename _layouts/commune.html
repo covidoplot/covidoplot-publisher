@@ -30,10 +30,17 @@ layout: default
   {% include cc.html title = title %}
 </div>
 
-<h2>Wie hoch ist der Anteil der Infizierten im Vergleich?</h2>
+<h2>Wie hoch ist das Infektionsrisiko im Vergleich?</h2>
 
-<p>TODO</p>
-
+<div id="risc">
+  <figure class="figure shadow mb-3 mt-4 p-3">
+    <img src="/assets/plots/commune-{{ page.ident }}-upwards-risc-comparism.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Risikovergleich.">
+    <figcaption class="figure-caption">Risiko in {{ page.title }} im Vergleich</figcaption>
+  </figure>
+  {% assign title = 'Diagramm Infektionsrisiko mit Covid 19 in ' | append: page.title %}
+  {% assign title = title | append: ' im Vergleich' %}
+  {% include cc.html title = title %}
+</div>
 
 <h2 id="numbers">Wie sehen die Zahlen aus?</h2>
 
