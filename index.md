@@ -12,6 +12,14 @@ title: "Neuigkeiten"
 
 ## Neuigkeiten
 
+### Diagramm der 7-Tage-Inzidenz
+
+Ein erneuter Lockdown droht, wenn es zu mehr als 50 neuen Fällen je 100.000 Einwohnern kommt.
+Dazu gibt es [ein neues Diagram](/kreis-hoexter.html#lockdown) 
+
+
+### Beginnt jetzt die zweite Welle 
+
     11. Mai 2020
     
 Infolge der "Öffnungsdiskussionsorgien" ist der lineare Rückgang der Zahlen
