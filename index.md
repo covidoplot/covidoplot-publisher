@@ -12,6 +12,59 @@ title: "Neuigkeiten"
 
 ## Neuigkeiten
 
+    11. Mai 2020
+    
+Infolge der "Öffnungsdiskussionsorgien" ist der lineare Rückgang der Zahlen
+der Erkrankte seit dem 07. Mai abgebrochen. Der Trend geht jetzt mehr zur
+Seite als Abwärts. Das RKI schätzt den R-Wert inzwischen sogar über eins ein.
+Viele Öffnungsmaßnahmen kommen jetzt erst hinzu.
+
+### Je ein Todesfall in Warburg und Steinheim
+
+    09. Mai 2020
+    
+Die Personen starben im Alter von [83 und 82 Jahren](https://www.radiohochstift.de/nachrichten/paderborn-hoexter/detailansicht/corona-update-samstag-zwei-weitere-tote-im-kreis-hoexter-altenheim-in-altenbeken-betroffen.html).
+    
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82
+
+
+### Fünfter Todesfall in Warburg
+
+    06. Mai 2020
+    
+Die verstorbene Person war [78 Jahre alt](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4196909-Zahl-der-aktiven-Infektionen-im-Kreis-Hoexter-geht-derweil-um-acht-auf-62-zurueck-Corona-Toter-aus-Warburg).
+Insgesamt gibt es jetzt 13 Todesfälle im Kreis Höxter. 
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78
+
+### Vier neue Todesfälle im Kreis Höxter
+
+    05. Mai 2020
+    
+Insgesamt gibt es jetzt 12 Todesfälle im Kreis. 
+In Höxter stieg die Zahl der Todesfälle von eins auf vier [(64, 78, 84)](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4196320-Station-in-Nieheimer-Altenheim-mit-17-Bewohnern-unter-Quarantaene-Vier-weitere-Corona-Tote-im-Kreis-Hoexter). 
+In Steinheim ist es der erste (77).
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77
+    
+### Vierter Todesfall in Warburg, der achte im Kreis Höxter
+
+    03. Mai 2020
+
+Die verstorbene Person war [95 Jahre alt](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Warburg/4195259-Update-95-jaehriger-Warburger-war-mit-dem-Coronavirus-infiziert-Achter-Todesfall-im-Kreis-Hoexter).
+Die bisherigen Fälle starben im Alter von: 80, 75, 82, 75, 86, 87, 96, 95
+
+### Todesfälle in Warburg und Höxter
+
+    30. April 2020
+    
+Zwei weitere Menschen sind verstorben, im Alter von [87 und 96 Jahren](https://www.radiohochstift.de/nachrichten/paderborn-hoexter/detailansicht/zwei-weitere-corona-todesfaelle-im-kreis-hoexter-aber-auch-wieder-mehr-genesene.html).
+
+Es gibt jetzt sieben Todesfälle folgenden Alters: 80, 75, 82, 75, 86, 87, 96
+
 ### Keine neuen Infektionsfälle
 
     26. April 2020
