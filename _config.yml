@@ -22,6 +22,11 @@ defaults:
     values:
       layout: "commune"
   - scope:
+      path: ""
+      type: "reports"
+    values:
+      layout: "default"
+  - scope:
       path: "index"
     values:
       layout: "home"
@@ -33,5 +38,7 @@ defaults:
 
 collections:
   communes:
+    output: true
+  reports:
     output: true
 

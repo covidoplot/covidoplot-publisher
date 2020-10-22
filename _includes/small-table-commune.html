@@ -1,22 +1,41 @@
 <div class="container shadow mb-5 mt-4 p-3" id="today">
     {% assign id = 'commune-' | append: page.ident %}
-    {% assign current = site.data[id].last %}
+    {% assign data = site.data[id] %}
+    {% assign current = data[-1] %}
+    {% assign previous = data[-2] %}
     <table class="table table-bordered">
-        <caption>Bestätigte Fälle in {{ page.title}} am {{ current.date | date: '%d. %B %Y' }}</caption>
+        <caption><strong>Bestätigte Fälle in {{ page.title}} am {{ current.date | date: '%d. %B %Y' }}.</strong>
+        <br/>Im Falle einer Änderung ist der Vortagswert in Klammern angegeben.</caption>
         <thead>
         <tr>
-            <th class="table-dark">erkrankt</th>
-            <th class="table-dark">wieder gesund</th>
+            <th class="table-dark">infiziert</th>
+            <th class="table-dark">genesen</th>
             <th class="table-dark">verstorben</th>
             <th class="table-dark">alle Fälle</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td>{{ current.ill }}</td>
-            <td>{{ current.recovered }}</td>
-            <td>{{ current.dead }}</td>
-            <td><strong>{{ current.confirmed }}</strong></td>
+            <td>{{current.ill}}
+                {% if previous.ill != current.ill %}
+                <small>({{previous.ill}})</small>
+                {% endif %}
+            </td>
+            <td>{{current.recovered}}
+                {% if previous.recovered != current.recovered %}
+                <small>({{previous.recovered}})</small>
+                {% endif %}
+            </td>
+            <td>{{current.dead}}
+                {% if previous.dead != current.dead %}
+                <small>({{previous.dead}})</small>
+                {% endif %}
+            </td>
+            <td class="table-secondary">{{current.confirmed}}
+                {% if previous.confirmed != current.confirmed %}
+                <small>({{previous.confirmed}})</small>
+                {% endif %}
+            </td>
         </tr>
         </tbody>
     </table>

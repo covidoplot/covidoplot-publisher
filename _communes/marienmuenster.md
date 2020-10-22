@@ -11,4 +11,3 @@ Kreises Höxter ergeben sich diese Sprünge um zufällig jeweils drei aus unabh�
 Ereignissen.</p>
 
 
-

@@ -12,19 +12,110 @@ title: "Neuigkeiten"
 
 ## Neuigkeiten
 
+### Todesfall in Höxter 
+
+    8. Oktober 2020
+    
+Eine Person im Alter von [66 Jahren verstarb in Höxter](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4290669-Person-in-Hoexter-gestorben-Zahl-der-Infektionen-steigt-auf-449-19.-Todesfall-in-Zusammenhang-mit-Corona).
+Das ist der siebte Todesfall in Höxter und der 19. im Kreis Höxter.
+Mit 66 Jahren ist es der zweitjüngste Todesfall im Kreis.
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66
+
+
+
+### Niedrigster Stand der 7-Tage-Inzidenz in NRW
+
+    6. Oktober 2020
+    
+Nachdem die Welle zum Ende der Sommerferien rückläufig wurde, 
+setze sie sich im September rasch wieder auf vorheriger Höhe fort. 
+Es kam jetzt insbesondere in Kindergärten und Schulen zu Infektionen.
+Vereinzelt wurden Einrichtungen geschlossen.
+
+Diese Fortsetzung der zweiten Welle sinkt heute auf unter neun
+aktiv Erkrankte im Kreis Höxter. Die 7-Tages-Inzidenz ist aktuell
+die niedrigste in NRW. Es wirkt wie die Ruhe vor dem Sturm, da 
+das Wetter jetzt deutlich kühler und fechter wird, während die 
+Infektionen fast überall in Europa schon seit Wochen steigen.
+    
+### Zweite Welle geht erstmals zurück
+
+    5. September 2020
+    
+Mit dem Rückreiseverkehr zum Ende der Ferien kam es im August zu einer zweiten Welle
+im Kreis Höxter, jedoch deutlich niedriger als die erste. Diese nimmt jetzt wieder ab.
+
+Zunächst waren einzelne Fälle gleichmäßig über die Gemeinden verteilt. Das spricht 
+gegen eine lokale Quelle und legt importierte Fälle durch Rückkehrer nah. Die 
+meisten wurden schnell wieder gesund, während sich in Brakel, Willebadessen, Steinheim 
+und Warburg kleinere Herde ausbildeten.
+
+### Kreis Höxter erreicht erstmals Null aktive Fälle
+
+    22. Juli 2020
+    
+Der letzte Krankheitsfall im Kreis Höxter in Nieheim ist genesen.
+Damit hat der Kreis Höxter erstmals keine bekannten aktiven Fälle mehr.
+
+### Todesfall in Höxter
+
+    19. Juni 2020
+
+Eine Person im Alter von [86 Jahren verstarb in Bad Driburg](https://www.hoexter-news.de/covid-19/6029-kreis-hoexter-nur-noch-acht-aktive-infektionen-jedoch-weiterer-todesfall-zu-beklagen).
+Das ist der erste Todesfall in Bad Driburg und der 18. im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86
+
+### Todesfall in Höxter
+
+    23. Mai 2020
+    
+Eine Person im Alter von [84 Jahren verstarb in Höxter](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4205434-Zahl-der-Infektionen-steigt-auf-345-zwei-weitere-Erkrankte-in-Willebadessen-Corona-sechster-Todesfall-in-Hoexter).
+In der Stadt Höxter stieg damit die Zahl der Todesfälle auf sechs, im Kreis Höxter auf siebzehn.
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84
+
+### Neun Fälle im Bad Driburger Clemensheim
+
+    22. Mai 2020
+    
+Insgesamt sind neuen Fälle in der Zentralen Unterkunft für Flüchtlinge aufgetreten.
+Zu zwei bekannten Fällen kamen im Zuge einer Reihenuntersuchung sieben Fälle hinzu.
+Alle 214 Bewohner und Bediensteten wurden gestestet. 
+Das bestätigt bisherige Schätzungen der Dunkelziffer in der Dimension.
+Die Situation ist jedoch nicht repräsentativ für den Bevölkerungsdurchschnitt.
+
+Quellen:
+
+* [Radio Hochstift](https://www.radiohochstift.de/nachrichten/paderborn-hoexter/detailansicht/neun-bewohner-im-bad-driburger-clemensheim-mit-covid-19-infinziert.html)
+* [Westfalen-Blatt](https://m.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4205037-Insgesamt-mittlerweile-neun-bestaetigte-Infektionen-im-Bad-Driburger-Clemensheim-Weitere-Corona-Faelle-in-Fluechtlingsunterkunft)
+
+### Todesfall in Höxter
+
+    19. Mai 2020
+    
+Eine Person im Alter von [78 Jahren verstarb in Höxter](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4203598-Corona-Zahlen-von-Mittwoch-Ein-weiterer-Todesfall-im-Kreis-Hoexter).
+In der Stadt Höxter stieg damit die Zahl der Todesfälle auf fünf, im Kreis Höxter auf sechzehn.
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78
+
 ### Diagramm der 7-Tage-Inzidenz
 
 Ein erneuter Lockdown droht, wenn es zu mehr als 50 neuen Fällen je 100.000 Einwohnern kommt.
 Dazu gibt es [ein neues Diagram](/kreis-hoexter.html#lockdown) 
 
-
-### Beginnt jetzt die zweite Welle 
+### Beginnt jetzt die zweite Welle?
 
     11. Mai 2020
     
 Infolge der "Öffnungsdiskussionsorgien" ist der lineare Rückgang der Zahlen
-der Erkrankte seit dem 07. Mai abgebrochen. Der Trend geht jetzt mehr zur
-Seite als Abwärts. Das RKI schätzt den R-Wert inzwischen sogar über eins ein.
+der Erkrankte seit Anfang Mai abgebrochen. Der Trend geht jetzt mehr zur
+Seite als abwärts. Das RKI schätzt den R-Wert derzeit sogar über eins ein.
 Viele Öffnungsmaßnahmen kommen jetzt erst hinzu.
 
 ### Je ein Todesfall in Warburg und Steinheim
@@ -166,7 +257,4 @@ Zugrundeglegt werden die Zahlen, die der Kreis Höxter auf seiner offiziellen We
 <https://www.kreis-hoexter.de/>
 
 Vereinzelt werden weitere Datenquellen hinzugezogen, um den Zahlen einen Kontext zu geben.
-    
-
-
 

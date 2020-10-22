@@ -1,12 +1,13 @@
 <div class="shadow mb-5 mt-4 p-3" id="today">
     {% assign date = site.data.district-hoexter.last.date %}
     <table class="table table-bordered table-sm">
-        <caption> Bestätigte Fälle im Kreis Höxter am {{ date | date: '%d. %B %Y' }}</caption>
+        <caption><strong>Bestätigte Fälle im Kreis Höxter am {{ date | date: '%d. %B %Y' }}.</strong>
+            <br/>Im Falle einer Änderung ist der Vortagswert in Klammern angegeben.</caption>
         <thead class="">
         <tr class="">
             <th class="table-dark">Gemeinde</th>
-            <th class="table-dark">erkrankt</th>
-            <th class="table-dark">wieder gesund</th>
+            <th class="table-dark">infiziert</th>
+            <th class="table-dark">genesen</th>
             <th class="table-dark">verstorben</th>
             <th class="table-dark">alle Fälle</th>
         </tr>
@@ -17,24 +18,58 @@
         {% assign key = commune.first %}
         {% assign name = commune.last %}
         {% assign id = 'commune-' | append: key %}
-        {% assign current = site.data[id].last %}
+        {% assign current = site.data[id][-1] %}
+        {% assign previous = site.data[id][-2] %}
         <tr>
             <th scope="row" class="table-primary">{{name}}</th>
-            <td>{{current.ill}}</td>
-            <td>{{current.recovered}}</td>
-            <td>{{current.dead}}</td>
-            <td class="table-secondary">{{current.confirmed}}</td>
+            <td>{{current.ill}}
+                {% if previous.ill != current.ill %}
+                <small>({{previous.ill}})</small>
+                {% endif %}
+            </td>
+            <td>{{current.recovered}}
+                {% if previous.recovered != current.recovered %}
+                <small>({{previous.recovered}})</small>
+                {% endif %}
+            </td>
+            <td>{{current.dead}}
+                {% if previous.dead != current.dead %}
+                <small>({{previous.dead}})</small>
+                {% endif %}
+            </td>
+            <td class="table-secondary">{{current.confirmed}}
+                {% if previous.confirmed != current.confirmed %}
+                <small>({{previous.confirmed}})</small>
+                {% endif %}
+            </td>
         </tr>
         {% endfor %}
-        {% assign current = site.data.district-hoexter.last %}
+        {% assign current = site.data.district-hoexter[-1] %}
+        {% assign previous = site.data.district-hoexter[-2] %}
         </tbody>
         <tfoot>
         <tr class="">
             <th scope="row" class="table-secondary">Insgesamt</th>
-            <td class="table-secondary">{{current.ill}}</td>
-            <td class="table-secondary">{{current.recovered}}</td>
-            <td class="table-secondary">{{current.dead}}</td>
-            <td class="table-secondary"><strong>{{current.confirmed}}</strong></td>
+            <td class="table-secondary">{{current.ill}}
+                {% if previous.ill != current.ill %}
+                <small>({{previous.ill}})</small>
+                {% endif %}
+            </td>
+            <td class="table-secondary">{{current.recovered}}
+                {% if previous.recovered != current.recovered %}
+                <small>({{previous.recovered}})</small>
+                {% endif %}
+            </td>
+            <td class="table-secondary">{{current.dead}}
+                {% if previous.dead != current.dead %}
+                <small>({{previous.dead}})</small>
+                {% endif %}
+            </td>
+            <td class="table-secondary"><strong>{{current.confirmed}}
+                {% if previous.confirmed != current.confirmed %}
+                <small>({{previous.confirmed}})</small>
+                {% endif %}
+            </strong></td>
         </tr>
         </tfoot>
     </table>
