@@ -4,7 +4,7 @@
     {% assign current = data[-1] %}
     {% assign previous = data[-2] %}
     <table class="table table-bordered">
-        <caption><strong>Bestätigte Fälle in {{ page.title}} am {{ current.date | date: '%d. %B %Y' }}.</strong>
+        <caption><strong>Bestätigte Fälle in {{ page.title}} am {{ current.date | full_german_date }}.</strong>
         <br/>Im Falle einer Änderung ist der Vortagswert in Klammern angegeben.</caption>
         <thead>
         <tr>
@@ -17,24 +17,20 @@
         <tbody>
         <tr>
             <td>{{current.ill}}
-                {% if previous.ill != current.ill %}
-                <small>({{previous.ill}})</small>
-                {% endif %}
+                {% assign diff = current.ill | minus: previous.ill %}
+                {% include diff.html %}
             </td>
             <td>{{current.recovered}}
-                {% if previous.recovered != current.recovered %}
-                <small>({{previous.recovered}})</small>
-                {% endif %}
+                {% assign diff = current.recovered | minus: previous.recovered %}
+                {% include diff.html %}
             </td>
             <td>{{current.dead}}
-                {% if previous.dead != current.dead %}
-                <small>({{previous.dead}})</small>
-                {% endif %}
+                {% assign diff = current.dead | minus: previous.dead %}
+                {% include diff.html %}
             </td>
             <td class="table-secondary">{{current.confirmed}}
-                {% if previous.confirmed != current.confirmed %}
-                <small>({{previous.confirmed}})</small>
-                {% endif %}
+                {% assign diff = current.confirmed | minus: previous.confirmed %}
+                {% include diff.html %}
             </td>
         </tr>
         </tbody>

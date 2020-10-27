@@ -2,3 +2,12 @@
 
 @import "custom/variables";
 @import "bootstrap/bootstrap";
+
+.up:before {
+    content: " ↑";
+}
+
+.down:before {
+    content: " ↓";
+}
+

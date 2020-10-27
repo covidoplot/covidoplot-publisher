@@ -5,12 +5,29 @@ title: "Neuigkeiten"
 
 {% include small-table-index.html %}
 
-<figure class="figure shadow mb-5 mt-4 p-3" id="summary">
-  <img src="/assets/plots/district-hoexter-overview.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
-  <figcaption class="figure-caption">Bestätigte Fälle von Covid 19 im Kreis Höxter</figcaption>
+<figure class="figure shadow mb-5 mt-4 p-3" id="map">
+  <img src="/assets/plots/district-hoexter-last_weeks_incidence-map.png" class="figure-img img-fluid rounded" alt="Karte der Wocheninzidenzen im Kreis Höxter">
+  <figcaption class="figure-caption">Morgens steht zuerst die vom Kreis Höxter berechnete Wocheninzidenz
+  zur Verfügung. Diese ist als vorläufig gekennzeichnet, bis die amtliche Inzidenz des  
+  Landeszentrum Gesundheit Nordrhein-Westfalen (LZG) zur Verfügung steht.
+  </figcaption>
 </figure>
 
 ## Neuigkeiten
+
+### Gefährdungsstufen I und II werden festgestellt 
+
+    25. Oktober 2020
+    
+Nachdem am Wochendende die 7-Tage-Inzidenz die Schwellen von 35 und 50 überschritten hat,
+stellt der Kreis Höxter für Montag den 26. Oktober die [Gefährdungsstufen I und II fest](https://corona.kreis-hoexter.de/aktuelles/5040.Corona-Allgemeinverfuegung-Erreichen-der-Gefaehrdungsstufen-im-Kreis-Hoexter-festgestellt.html).
+
+### Nachruf auf Johannes Mellwig 
+
+    17. Oktober 2020
+
+Das Westfalenblatt veröffentlich einen [Nachruf](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4296181-Corona-und-die-Folgen-Hoexteraner-starb-ohne-Vorerkrankung-Kampf-nach-189-Tagen-verloren)
+auf den Anfang Oktober verstorbenen Höxteraner Johannes Mellwig.
 
 ### Todesfall in Höxter 
 
@@ -19,6 +36,7 @@ title: "Neuigkeiten"
 Eine Person im Alter von [66 Jahren verstarb in Höxter](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4290669-Person-in-Hoexter-gestorben-Zahl-der-Infektionen-steigt-auf-449-19.-Todesfall-in-Zusammenhang-mit-Corona).
 Das ist der siebte Todesfall in Höxter und der 19. im Kreis Höxter.
 Mit 66 Jahren ist es der zweitjüngste Todesfall im Kreis.
+
 
 Die bisherigen Fälle starben im Alter von: 
 80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66

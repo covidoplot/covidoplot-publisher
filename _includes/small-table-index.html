@@ -1,7 +1,7 @@
 <div class="container shadow mb-5 mt-4 p-3">
     {% assign current = site.data.district-hoexter.last %}
     <table class="table table-bordered table-ligth" id="today">
-        <caption> Bestätigte Fälle im Kreis Höxter am {{ current.date | date: '%d. %B %Y' }}</caption>
+        <caption> Bestätigte Fälle im Kreis Höxter am {{ current.date | full_german_date }}</caption>
         <thead class="">
         <tr>
             <th class="table-dark">infiziert</th>
