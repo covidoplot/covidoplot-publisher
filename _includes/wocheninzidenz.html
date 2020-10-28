@@ -1,0 +1,22 @@
+{% if current.STI-LZG %}
+    {{ current.STI-LZG | round: 1 }}
+    {% if previous.STI-LZG %}
+        {% assign diff = current.STI-LZG | minus: previous.STI-LZG | round: 1 %}
+        {% include diff.html %}
+    {% endif %}
+    <br/><small>(LZG NRW, amtlich)</small>
+{% elsif current.STI-RKI %}
+    {{ current.STI-RKI | round: 1 }}
+    {% if previous.STI-RKI %}
+        {% assign diff = current.STI-LZG | minus: previous.STI-RKI | round: 1 %}
+        {% include diff.html %}
+    {% endif %}
+    <br/><small>(RKI, vorläufig)</small>
+{% else %}
+    {{ current.last_weeks_incidence | round: 1 }}
+    {% if previous.last_weeks_incidence %}
+        {% assign diff = current.last_weeks_incidence | minus: previous.last_weeks_incidence | round: 1 %}
+        {% include diff.html %}
+    {% endif %}
+    <br/><small>(Covidoplot, vorläufig)</small>
+{% endif %}

@@ -2,14 +2,17 @@
     {% assign date = site.data.district-hoexter.last.date %}
     <table class="table table-bordered table-sm">
         <caption><strong>Bestätigte Fälle im Kreis Höxter am {{ date | full_german_date }}.</strong>
-            <br/>Pfeile: Änderungen gegenüber dem Vortag.</caption>
-        <thead class="">
+            <br/>Pfeile: Änderungen gegenüber dem Vortag.
+            <br/>Inzidenz: 7-Tage-Inzidenz
+        </caption>
+        <thead class="table-dark">
         <tr class="">
-            <th class="table-dark">Gemeinde</th>
-            <th class="table-dark">infiziert</th>
-            <th class="table-dark">genesen</th>
-            <th class="table-dark">verstorben</th>
-            <th class="table-dark">alle Fälle</th>
+            <th class="">Gemeinde</th>
+            <th class="">infektiös</th>
+            <th class="">genesen</th>
+            <th class="">verstorben</th>
+            <th class="">alle <small><nobr>↑ neue</nobr></small></th>
+            <th class="">Inzidenz</th>
         </tr>
         </thead>
         <tbody>
@@ -38,12 +41,17 @@
                 {% assign diff = current.confirmed | minus: previous.confirmed %}
                 {% include diff.html %}
             </td>
+            <td class="table-primary">
+                {{ current.last_weeks_incidence | round: 1 }}
+                {% assign diff = current.last_weeks_incidence | minus: previous.last_weeks_incidence | round: 1 %}
+                {% include diff.html %}
+            </td>
         </tr>
         {% endfor %}
         {% assign current = site.data.district-hoexter[-1] %}
         {% assign previous = site.data.district-hoexter[-2] %}
         </tbody>
-        <tfoot>
+        <tfoot class="">
         <tr class="">
             <th scope="row" class="table-secondary">Insgesamt</th>
             <td class="table-secondary">{{current.ill}}
@@ -62,6 +70,9 @@
                 {% assign diff = current.confirmed | minus: previous.confirmed %}
                 {% include diff.html %}
             </strong></td>
+            <td class="table-secondary">
+                {% include wocheninzidenz.html %}
+            </td>
         </tr>
         </tfoot>
     </table>

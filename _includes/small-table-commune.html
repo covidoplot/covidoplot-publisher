@@ -5,13 +5,16 @@
     {% assign previous = data[-2] %}
     <table class="table table-bordered">
         <caption><strong>Bestätigte Fälle in {{ page.title}} am {{ current.date | full_german_date }}.</strong>
-        <br/>Pfeile: Änderungen gegenüber dem Vortag.</caption>
-        <thead>
+        <br/>Pfeile: Änderungen gegenüber dem Vortag.
+        <br/>Inzidenz: 7-Tage-Inzidenz
+        </caption>
+        <thead class="table-dark">
         <tr>
-            <th class="table-dark">infiziert</th>
-            <th class="table-dark">genesen</th>
-            <th class="table-dark">verstorben</th>
-            <th class="table-dark">alle Fälle</th>
+            <th class="">infektiös</th>
+            <th class="">genesen</th>
+            <th class="">verstorben</th>
+            <th class="">alle <span class="up">neue</span></th>
+            <th class="">Inzidenz</th>
         </tr>
         </thead>
         <tbody>
@@ -30,6 +33,11 @@
             </td>
             <td class="table-secondary">{{current.confirmed}}
                 {% assign diff = current.confirmed | minus: previous.confirmed %}
+                {% include diff.html %}
+            </td>
+            <td class="table-primary">
+                {{ current.last_weeks_incidence | round: 1 }}
+                {% assign diff = current.last_weeks_incidence | minus: previous.last_weeks_incidence | round: 1 %}
                 {% include diff.html %}
             </td>
         </tr>

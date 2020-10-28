@@ -2,12 +2,13 @@
     {% assign current = site.data.district-hoexter.last %}
     <table class="table table-bordered table-ligth" id="today">
         <caption> Bestätigte Fälle im Kreis Höxter am {{ current.date | full_german_date }}</caption>
-        <thead class="">
+        <thead class="thead-dark">
         <tr>
-            <th class="table-dark">infiziert</th>
-            <th class="table-dark">genesen</th>
-            <th class="table-dark">verstorben</th>
-            <th class="table-dark">alle Fälle</th>
+            <th class="">infektiös</th>
+            <th class="">genesen</th>
+            <th class="">verstorben</th>
+            <th class="">alle</th>
+            <th class="">Inzidenz</th>
         </tr>
         </thead>
         <tbody>
@@ -15,7 +16,10 @@
             <td>{{ current.ill }}</td>
             <td>{{ current.recovered }}</td>
             <td>{{ current.dead }}</td>
-            <td><strong>{{ current.confirmed }}</strong></td>
+            <td class="table-secondary"><strong>{{ current.confirmed }}</strong></td>
+            <td class="table-primary"><em>
+                {% include wocheninzidenz.html %}
+            </em></td>
         </tr>
         </tbody>
     </table>

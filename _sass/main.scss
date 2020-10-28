@@ -3,11 +3,14 @@
 @import "custom/variables";
 @import "bootstrap/bootstrap";
 
+.up, .down {
+    font-size: 0.7rem;
+}
 .up:before {
-    content: " ↑";
+    content: "↑";
 }
 
 .down:before {
-    content: " ↓";
+    content: "↓";
 }
 
