@@ -8,10 +8,17 @@
 {% elsif current.STI-RKI %}
     {{ current.STI-RKI | round: 1 }}
     {% if previous.STI-RKI %}
-        {% assign diff = current.STI-LZG | minus: previous.STI-RKI | round: 1 %}
+        {% assign diff = current.STI-RKI | minus: previous.STI-RKI | round: 1 %}
         {% include diff.html %}
     {% endif %}
     <br/><small>(RKI, vorläufig)</small>
+{% elsif current.STI-Kreis %}
+    {{ current.STI-Kreis | round: 1 }}
+    {% if previous.STI-Kreis %}
+        {% assign diff = current.STI-Kreis | minus: previous.STI-Kreis | round: 1 %}
+        {% include diff.html %}
+    {% endif %}
+    <br/><small>(Kreis, vorläufig)</small>
 {% else %}
     {{ current.last_weeks_incidence | round: 1 }}
     {% if previous.last_weeks_incidence %}

@@ -1,9 +1,8 @@
 <div class="shadow mb-5 mt-4 p-3" id="today">
     {% assign date = site.data.district-hoexter.last.date %}
     <table class="table table-bordered table-sm">
-        <caption><strong>Bestätigte Fälle im Kreis Höxter am {{ date | full_german_date }}.</strong>
-            <br/>Pfeile: Änderungen gegenüber dem Vortag.
-            <br/>Inzidenz: 7-Tage-Inzidenz
+        <caption><strong>Bestätigte Fälle im Kreis Höxter am {{ date | full_german_date }}</strong>
+            {% include table-legend.html %}
         </caption>
         <thead class="table-dark">
         <tr class="">

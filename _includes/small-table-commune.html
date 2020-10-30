@@ -4,9 +4,8 @@
     {% assign current = data[-1] %}
     {% assign previous = data[-2] %}
     <table class="table table-bordered">
-        <caption><strong>Bestätigte Fälle in {{ page.title}} am {{ current.date | full_german_date }}.</strong>
-        <br/>Pfeile: Änderungen gegenüber dem Vortag.
-        <br/>Inzidenz: 7-Tage-Inzidenz
+        <caption><strong>Bestätigte Fälle in {{ page.title}} am {{ current.date | full_german_date }}</strong>
+            {% include table-legend.html %}
         </caption>
         <thead class="table-dark">
         <tr>

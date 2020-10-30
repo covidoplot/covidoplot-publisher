@@ -1,0 +1,10 @@
+.up, .down {
+    font-size: 0.7rem;
+}
+.up:before {
+    content: "↑";
+}
+
+.down:before {
+    content: "↓";
+}
