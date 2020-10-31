@@ -1,13 +1,14 @@
-<div class="container shadow mb-5 mt-4 p-3" id="today">
+<div class="card" id="today">
     {% assign id = 'commune-' | append: page.ident %}
     {% assign data = site.data[id] %}
     {% assign current = data[-1] %}
     {% assign previous = data[-2] %}
+    <h2 class="card-header">{{ current.date | full_german_date }}</h2>
     <table class="table table-bordered">
-        <caption><strong>Bestätigte Fälle in {{ page.title}} am {{ current.date | full_german_date }}</strong>
+        <caption class=""><strong>Bestätigte Fälle in {{ page.title}} am {{ current.date | full_german_date }}</strong>
             {% include table-legend.html %}
         </caption>
-        <thead class="table-dark">
+        <thead class="thead-dark">
         <tr>
             <th class="">infektiös</th>
             <th class="">genesen</th>
@@ -18,29 +19,31 @@
         </thead>
         <tbody>
         <tr>
-            <td>{{current.ill}}
+            <td class="table-secondary">{{current.ill}}
                 {% assign diff = current.ill | minus: previous.ill %}
                 {% include diff.html %}
             </td>
-            <td>{{current.recovered}}
+            <td class="table-secondary">{{current.recovered}}
                 {% assign diff = current.recovered | minus: previous.recovered %}
                 {% include diff.html %}
             </td>
-            <td>{{current.dead}}
+            <td class="table-secondary">{{current.dead}}
                 {% assign diff = current.dead | minus: previous.dead %}
                 {% include diff.html %}
             </td>
-            <td class="table-secondary">{{current.confirmed}}
+            <td class="table-primary"><strong>{{current.confirmed}}
                 {% assign diff = current.confirmed | minus: previous.confirmed %}
                 {% include diff.html %}
+            </strong>
             </td>
-            <td class="table-primary">
-                {{ current.last_weeks_incidence | round: 1 }}
+            <td class="table-secondary">
+                <em>{{ current.last_weeks_incidence | round: 1 }}
                 {% assign diff = current.last_weeks_incidence | minus: previous.last_weeks_incidence | round: 1 %}
                 {% include diff.html %}
+                </em>
             </td>
         </tr>
         </tbody>
     </table>
-    <p><a href="#numbers">mehr Zahlen ...</a></p>
+    <div class="card-footer"><a href="#numbers">mehr Zahlen ...</a></div>
 </div>

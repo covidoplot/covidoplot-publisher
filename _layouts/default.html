@@ -3,15 +3,16 @@
 {% include head.html %}
 <body>
 {% include header.html %}
+
 <main role="main">
-    <div class="jumbotron">
+    <div class="jumbotron bg-gradient-primary text-dark">
         <div class="container">
             <h1 class="display-4 page-title">{{ page.title }}</h1>
         </div>
     </div>
     <div class="container">
         {{ content}}
-        <div class="alert alert-warning" role="alert">
+        <div class="alert alert-warning shadow-sm" role="alert">
             <h3>Bestätigte Fälle</h3>
             <p>
                 Die bestätigten Infektionen sind vermutlich nur der kleinere Teil aller Fälle.
@@ -24,7 +25,7 @@
                 sein kann, als es die Anzahl der bestätigten Fälle nahe legt.
             </p>
         </div>
-        <div class="alert alert-info" role="alert">
+        <div class="alert alert-info shadow-sm" role="alert">
             <h3>Covid 19, Sars-CoV-2 oder Coronavirus?</h3>
             <p>
                 <strong>Coronaviren</strong> sind eine Virusfamilie, zu der auch das Virus <strong>Sars-CoV-2</strong> gehört.
@@ -41,7 +42,7 @@
             </dl>
             <p>Fazit: Der umgangssprachliche Begriff Coronavirus ist sehr unpräzise.</p>
         </div>
-        <div class="alert alert-info" role="alert">
+        <div class="alert alert-info shadow-sm" role="alert">
             <h3>Quellen der Zahlen</h3>
             <p>Die Zahlen des Kreises Höxter werden täglich auf <a href="https://www.kreis-hoexter.de">seiner Homepage</a>
                 veröffentlicht, jedoch nicht archiviert. Bis zum 23. März 2020 wurden nur die Fallzahlen allein für den
@@ -52,7 +53,7 @@
                 <a href="https://github.com/CSSEGISandData/COVID-19">hier täglich</a> aktualisiert.
             </p>
         </div>
-        <div class="alert alert-info" role="alert">
+        <div class="alert alert-info shadow-sm" role="alert">
             <h3>Inkonsistenzen der Zahlen</h3>
             <p>Gelegentlich werden Zahlen von den Behörden nachträglich korrigiert, z.B. weil ein Erkrankter einer
                 anderen Gemeinde zugeordnet wird. Dann kommt es zu kleinen Inkonsistenzen in den Zahlen,

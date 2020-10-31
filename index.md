@@ -5,9 +5,9 @@ title: "Neuigkeiten"
 
 {% include small-table-index.html %}
 
-<figure class="figure shadow mb-5 mt-4 p-3" id="map">
+<figure class="card figure shadow mb-5 mt-4 p-3" id="map">
   <img src="/assets/plots/district-hoexter-last_weeks_incidence-map.png" class="figure-img img-fluid rounded" alt="Karte der Wocheninzidenzen im Kreis Höxter">
-  <figcaption class="figure-caption">Morgens steht zuerst die vom Kreis Höxter berechnete Wocheninzidenz
+  <figcaption class="figure-caption p-3">Morgens steht zuerst die vom Kreis Höxter berechnete Wocheninzidenz
   zur Verfügung. Diese ist als vorläufig gekennzeichnet, bis die amtliche Inzidenz des  
   Landeszentrum Gesundheit Nordrhein-Westfalen (LZG) zur Verfügung steht.
   </figcaption>

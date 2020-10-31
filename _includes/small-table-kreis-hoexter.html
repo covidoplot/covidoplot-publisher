@@ -1,7 +1,7 @@
-<div class="shadow mb-5 mt-4 p-3" id="today">
+<div class="card" id="today">
     {% assign date = site.data.district-hoexter.last.date %}
     <table class="table table-bordered table-sm">
-        <caption><strong>Bestätigte Fälle im Kreis Höxter am {{ date | full_german_date }}</strong>
+        <caption class=""><strong>Bestätigte Fälle im Kreis Höxter am {{ date | full_german_date }}</strong>
             {% include table-legend.html %}
         </caption>
         <thead class="table-dark">
@@ -11,7 +11,7 @@
             <th class="">genesen</th>
             <th class="">verstorben</th>
             <th class="">alle <small><nobr>↑ neue</nobr></small></th>
-            <th class="">Inzidenz</th>
+            <th class=""><em>Inzidenz</em></th>
         </tr>
         </thead>
         <tbody>
@@ -23,7 +23,7 @@
         {% assign current = site.data[id][-1] %}
         {% assign previous = site.data[id][-2] %}
         <tr>
-            <th scope="row" class="table-primary">{{name}}</th>
+            <th scope="row" class="table-secondary">{{name}}</th>
             <td>{{current.ill}}
                 {% assign diff = current.ill | minus: previous.ill %}
                 {% include diff.html %}
@@ -36,14 +36,16 @@
                 {% assign diff = current.dead | minus: previous.dead %}
                 {% include diff.html %}
             </td>
-            <td class="table-secondary">{{current.confirmed}}
+            <td class="table-primary">{{current.confirmed}}
                 {% assign diff = current.confirmed | minus: previous.confirmed %}
                 {% include diff.html %}
             </td>
-            <td class="table-primary">
-                {{ current.last_weeks_incidence | round: 1 }}
-                {% assign diff = current.last_weeks_incidence | minus: previous.last_weeks_incidence | round: 1 %}
-                {% include diff.html %}
+            <td class="table-secondary">
+                <em>
+                    {{ current.last_weeks_incidence | round: 1 }}
+                    {% assign diff = current.last_weeks_incidence | minus: previous.last_weeks_incidence | round: 1 %}
+                    {% include diff.html %}
+                </em>
             </td>
         </tr>
         {% endfor %}
@@ -52,28 +54,37 @@
         </tbody>
         <tfoot class="">
         <tr class="">
-            <th scope="row" class="table-secondary">Insgesamt</th>
-            <td class="table-secondary">{{current.ill}}
+            <th scope="row" class="table-primary">Insgesamt</th>
+            <td class="table-primary">
+                <strong>
+                {{current.ill}}
                 {% assign diff = current.ill | minus: previous.ill %}
                 {% include diff.html %}
+                </strong>
             </td>
-            <td class="table-secondary">{{current.recovered}}
+            <td class="table-primary">
+                <strong>
+                {{current.recovered}}
                 {% assign diff = current.recovered | minus: previous.recovered %}
                 {% include diff.html %}
+                </strong>
             </td>
-            <td class="table-secondary">{{current.dead}}
-                {% assign diff = current.dead | minus: previous.dead %}
-                {% include diff.html %}
+            <td class="table-primary">
+                <strong>
+                    {{current.dead}}
+                    {% assign diff = current.dead | minus: previous.dead %}
+                    {% include diff.html %}
+                </strong>
             </td>
-            <td class="table-secondary"><strong>{{current.confirmed}}
+            <td class="table-primary"><strong>{{current.confirmed}}
                 {% assign diff = current.confirmed | minus: previous.confirmed %}
                 {% include diff.html %}
             </strong></td>
             <td class="table-secondary">
-                {% include wocheninzidenz.html %}
+                <strong><em>{% include wocheninzidenz.html %}</em></strong>
             </td>
         </tr>
         </tfoot>
     </table>
-    <p><a href="#numbers">mehr Zahlen ...</a></p>
+    <p class="card-footer"><a href="#numbers">mehr Zahlen ...</a></p>
 </div>

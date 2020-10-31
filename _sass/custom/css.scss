@@ -8,3 +8,26 @@
 .down:before {
     content: "↓";
 }
+
+.card {
+    margin-bottom: 3rem;
+    box-shadow: $box-shadow;
+}
+
+.card .figure-caption {
+    padding: 3rem;
+}
+
+.card .table caption {
+    padding: 1rem;
+}
+
+.card-footer {
+   color: $text_lighter;
+}
+
+.navbar.navbar-light {
+    background-color: $bg_light;
+}
+
+

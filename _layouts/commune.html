@@ -2,14 +2,20 @@
 layout: default
 ---
 
-{{ content }}
-
 {% include small-table-commune.html %}
 
-<h2 id="summary">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
+{% assign x = content | strip_newlines %}
+{% if x != "" %}
+<div class="card mb-5 shadow">
+    <div class="card-body">
+        {{ content }}
+    </div>
+</div>
+{% endif %}
 
-<div id="overview">
-  <figure class="figure shadow mb-3 mt-4 p-3">
+<div class="card" id="overview">
+  <h2 class="card-header">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
+  <figure class="figure">
     <img src="/assets/plots/commune-{{page.ident}}-overview.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
     <figcaption class="figure-caption">
       Bestätigte Fälle von Covid 19 in {{ page.title }}
@@ -20,29 +26,28 @@ layout: default
   {% include cc.html title = title %}
 </div>
 
-<div id="stacked">
-  <figure class="figure shadow mb-3 mt-4 p-3">
-    <img src="/assets/plots/commune-{{ page.ident }}-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
-    <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
-  </figure>
-  {% assign title = 'Diagramm Bestätigte Fälle von Covid-19 in ' | append: page.title %}
-  {% assign title = title | append: ' (gestapelt)' %}
-  {% include cc.html title = title %}
+<div class="card" id="stacked">
+    <h2 class="card-header">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
+    <figure class="figure">
+      <img src="/assets/plots/commune-{{ page.ident }}-stacked.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+      <figcaption class="figure-caption">Aktive, genesene und Todesfälle ergeben zusammen alle bestätigten Infektionen.</figcaption>
+    </figure>
+    {% assign title = 'Diagramm Bestätigte Fälle von Covid-19 in ' | append: page.title %}
+    {% assign title = title | append: ' (gestapelt)' %}
+    {% include cc.html title = title %}
 </div>
 
-<h2>Wie hoch ist das Infektionsrisiko im Vergleich?</h2>
-
-<div id="risc">
-  <figure class="figure shadow mb-3 mt-4 p-3">
-    <img src="/assets/plots/commune-{{ page.ident }}-upwards-risc-comparism.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Risikovergleich.">
-    <figcaption class="figure-caption">Risiko in {{ page.title }} im Vergleich</figcaption>
-  </figure>
-  {% assign title = 'Diagramm Infektionsrisiko mit Covid 19 in ' | append: page.title %}
-  {% assign title = title | append: ' im Vergleich' %}
-  {% include cc.html title = title %}
+<div class="card" id="risc">
+    <h2 class="card-header">Wie hoch ist das Infektionsrisiko im Vergleich?</h2>
+    <figure class="figure">
+        <img src="/assets/plots/commune-{{ page.ident }}-upwards-risc-comparism.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Risikovergleich.">
+        <figcaption class="figure-caption">Risiko in {{ page.title }} im Vergleich</figcaption>
+    </figure>
+    {% assign title = 'Diagramm Infektionsrisiko mit Covid 19 in ' | append: page.title %}
+    {% assign title = title | append: ' im Vergleich' %}
+    {% include cc.html title = title %}
 </div>
-
-<h2 id="numbers">Wie sehen die Zahlen aus?</h2>
 
 {% include large-table-commune.html %}
+
 

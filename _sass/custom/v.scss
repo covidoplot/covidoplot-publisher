@@ -1,0 +1,100 @@
+// original defaults
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+// custom colors
+
+$green_white: #E6EAE0; // light shades
+$oslo_gray: #848E94; // light accent
+$olive_drab: #59A52B; // main color
+$cement: #867560; // dark accent
+$ebony_clay: #282E39; // dark shades
+$galliano: #cea00c; // warning
+$pomegranate: #f44336; // danger
+
+// accent colors
+
+$primary: $olive_drab;
+$secondary: $cement;
+$info: $cement;
+$warning: $galliano;
+$danger: $pomegranate;
+
+// custom text
+
+$text_light: $gray-500;
+$text_lighter: $gray-400;
+$text_dark: $gray-700;
+$text_darker: $gray-900;
+$text_accented: rgba($olive_drab, .9);
+$text_accented_plus: rgba($olive_drab, 1);
+
+// custom background
+
+$bg_light: lighten($green_white, 7%);
+$bg_dark: lighten($ebony_clay, 7%);
+$bg_darker: $ebony_clay;
+
+// body
+$body-bg: $bg_darker;
+$body-color: $text_light;
+
+// links
+$link-color: $text_accented;
+$link-hover-color: $text_accented_plus;
+
+// cards
+$card-color: $text_dark;
+$card-bg: $bg_light;
+$card-cap-bg: $bg_dark;
+$card-cap-color: $text_accented;
+
+// shadows
+$box-shadow-sm:               0 .5rem 1rem rgba($black, .9);
+$box-shadow:                  0 1rem 1.5rem rgba($black, .9);
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+
+// table
+
+$table-cell-padding:          .8rem;
+$table-cell-padding-sm:       .3rem;
+
+$table-caption-color:         $text_dark;
+$table-color:                 $text_darker;
+$table-bg:                    null !default;
+
+$table-accent-bg:             rgba($black, .05) !default;
+$table-hover-color:           $table-color !default;
+$table-hover-bg:              rgba($black, .075) !default;
+$table-active-bg:             $table-hover-bg !default;
+
+$table-dark-color:            $text_lighter;
+$table-dark-bg:               $bg_dark;
+
+// navbar
+
+// $navbar-light-color:                rgba($red, .5) !default;
+// $navbar-dark-color:                 rgba($green, .5) !default;
+
+// settings
+$enable-gradients: true;

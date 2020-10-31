@@ -1,7 +1,7 @@
-<div class="container shadow mb-5 mt-4 p-3">
+<div class="card" id="today">
     {% assign current = site.data.district-hoexter.last %}
-    <table class="table table-bordered table-ligth" id="today">
-        <caption> Bestätigte Fälle im Kreis Höxter am {{ current.date | full_german_date }}</caption>
+    <table class="table table-bordered">
+        <caption class="">Bestätigte Fälle im Kreis Höxter am {{ current.date | full_german_date }}</caption>
         <thead class="thead-dark">
         <tr>
             <th class="">infektiös</th>
@@ -13,15 +13,15 @@
         </thead>
         <tbody>
         <tr>
-            <td>{{ current.ill }}</td>
-            <td>{{ current.recovered }}</td>
-            <td>{{ current.dead }}</td>
-            <td class="table-secondary"><strong>{{ current.confirmed }}</strong></td>
-            <td class="table-primary"><em>
+            <td class="table-secondary">{{ current.ill }}</td>
+            <td class="table-secondary">{{ current.recovered }}</td>
+            <td class="table-secondary">{{ current.dead }}</td>
+            <td class="table-primary"><strong>{{ current.confirmed }}</strong></td>
+            <td class="table-secondary"><em>
                 {% include wocheninzidenz.html %}
             </em></td>
         </tr>
         </tbody>
     </table>
-    <p><a href="{{ '/kreis-hoexter' | relative_url }}#today">mehr Zahlen ...</a></p>
+    <div class="card-footer"><a href="{{ '/kreis-hoexter' | relative_url }}#today">mehr Zahlen ...</a></div>
 </div>
