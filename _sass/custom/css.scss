@@ -1,12 +1,26 @@
+.body > {
+    h1 { margin-top: 5rem; }
+
+    h2 { margin-top: 4rem; }
+
+    h3 { margin-top: 2rem; }
+}
+
 .up, .down {
     font-size: 0.7rem;
 }
-.up:before {
+.up:after {
     content: "↑";
+    font-size: 1rem;
+    margin-left: .1rem;
+    font-style: normal;
 }
 
-.down:before {
+.down:after {
     content: "↓";
+    font-size: 1rem;
+    margin-left: .1rem;
+    font-style: normal;
 }
 
 .card {
@@ -28,6 +42,10 @@
 
 .navbar.navbar-light {
     background-color: $bg_light;
+}
+
+.highlight {
+   color: $primary;
 }
 
 
