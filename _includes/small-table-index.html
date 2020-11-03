@@ -8,18 +8,16 @@
             <th class="">genesen</th>
             <th class="">verstorben</th>
             <th class="">alle</th>
-            <th class="">Inzidenz</th>
+            <th class="" colspan="2">Inzidenz</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td class="table-secondary">{{ current.ill }}</td>
-            <td class="table-secondary">{{ current.recovered }}</td>
-            <td class="table-secondary">{{ current.dead }}</td>
-            <td class="table-primary"><strong>{{ current.confirmed }}</strong></td>
-            <td class="table-secondary"><em>
-                {% include wocheninzidenz.html %}
-            </em></td>
+            <td style="width:20%" class="td-number table-secondary">{{ current.ill }}</td>
+            <td style="width:20%" class="td-number table-secondary">{{ current.recovered }}</td>
+            <td style="width:20%" class="td-number table-secondary">{{ current.dead }}</td>
+            <td style="width:20%" class="td-number table-primary"><strong>{{ current.confirmed }}</strong></td>
+            {% include wocheninzidenz.html %}
         </tr>
         </tbody>
     </table>

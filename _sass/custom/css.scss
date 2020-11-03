@@ -6,21 +6,23 @@
     h3 { margin-top: 2rem; }
 }
 
-.up, .down {
+.diff {
     font-size: 0.7rem;
 }
-.up:after {
+.diff-up:before {
     content: "↑";
     font-size: 1rem;
     margin-left: .1rem;
     font-style: normal;
+    float:left;
 }
 
-.down:after {
+.diff-down:before {
     content: "↓";
     font-size: 1rem;
     margin-left: .1rem;
     font-style: normal;
+    float:left;
 }
 
 .card {
@@ -46,6 +48,10 @@
 
 .highlight {
    color: $primary;
+}
+
+.td-number {
+    text-align: right;
 }
 
 

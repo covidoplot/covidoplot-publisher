@@ -1,29 +1,29 @@
-{% if current.STI-LZG %}
-    {{ current.STI-LZG | round: 1 }}
-    {% if previous.STI-LZG %}
+<td class="td-number table-secondary" style="width:20%"><strong><em>
+    {% if current.STI-LZG %}
+        {{ current.STI-LZG | round: 1 }}
+        <br/><small>(LZG NRW, amtlich)</small>
+    {% elsif current.STI-RKI %}
+        {{ current.STI-RKI | round: 1 }}
+        <br/><small>(RKI, vorläufig)</small>
+    {% elsif current.STI-Kreis %}
+        {{ current.STI-Kreis | round: 1 }}
+        <br/><small>(Kreis, vorläufig)</small>
+    {% else %}
+        {{ current.last_weeks_incidence | round: 1 }}
+        <br/><small>(Covidoplot, vorläufig)</small>
+    {% endif %}
+</em>
+</strong></td>
+
+<td class="td-number table-secondary"><strong>
+    {% if current.STI-LZG and previous.STI-LZG %}
         {% assign diff = current.STI-LZG | minus: previous.STI-LZG | round: 1 %}
-        {% include diff.html %}
-    {% endif %}
-    <br/><small>(LZG NRW, amtlich)</small>
-{% elsif current.STI-RKI %}
-    {{ current.STI-RKI | round: 1 }}
-    {% if previous.STI-RKI %}
+    {% elsif current.STI-RKI and previous.STI-RKI %}
         {% assign diff = current.STI-RKI | minus: previous.STI-RKI | round: 1 %}
-        {% include diff.html %}
-    {% endif %}
-    <br/><small>(RKI, vorläufig)</small>
-{% elsif current.STI-Kreis %}
-    {{ current.STI-Kreis | round: 1 }}
-    {% if previous.STI-Kreis %}
+    {% elsif current.STI-Kreis and previous.STI-Kreis %}
         {% assign diff = current.STI-Kreis | minus: previous.STI-Kreis | round: 1 %}
-        {% include diff.html %}
+    {% else %}
+        {% assign diff = current.last_weeks_incidence | minus: previous.last_weeks_incidence| round: 1 %}
     {% endif %}
-    <br/><small>(Kreis, vorläufig)</small>
-{% else %}
-    {{ current.last_weeks_incidence | round: 1 }}
-    {% if previous.last_weeks_incidence %}
-        {% assign diff = current.last_weeks_incidence | minus: previous.last_weeks_incidence | round: 1 %}
-        {% include diff.html %}
-    {% endif %}
-    <br/><small>(Covidoplot, vorläufig)</small>
-{% endif %}
+    {% include diff.html %}
+</strong></td>
