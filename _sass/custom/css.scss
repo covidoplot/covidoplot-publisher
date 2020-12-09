@@ -56,7 +56,11 @@
 
 // switch figures
 
-.choice-switch li {
+.choice .choice-switch {
+    display: block;
+    text-align: right;
+    .btn {
+    }
 }
 
 
