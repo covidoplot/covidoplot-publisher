@@ -13,19 +13,6 @@ layout: default
 </div>
 {% endif %}
 
-<div class="card" id="overview">
-  <h2 class="card-header">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
-  <figure class="figure">
-    <img src="/assets/plots/commune-{{page.ident}}-overview.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
-    <figcaption class="figure-caption">
-      Bestätigte Fälle von Covid 19 in {{ page.title }}
-    </figcaption>
-  </figure>
-  {% assign title = 'Diagramm Bestätigte Fälle von Covid-19 in ' | append: page.title %}
-  {% assign title = title | append: ' (Übersicht)' %}
-  {% include cc.html title = title %}
-</div>
-
 <div class="card" id="stacked">
     <h2 class="card-header">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
     <figure class="figure">
@@ -40,7 +27,7 @@ layout: default
 <div class="card" id="risc">
     <h2 class="card-header">Wie hoch ist das Infektionsrisiko im Vergleich?</h2>
     <figure class="figure">
-        <img src="/assets/plots/commune-{{ page.ident }}-upwards-risc-comparism.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Risikovergleich.">
+        <img src="/assets/plots/commune-{{ page.ident }}-vertical-risc-comparison.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Risikovergleich.">
         <figcaption class="figure-caption">Risiko in {{ page.title }} im Vergleich</figcaption>
     </figure>
     {% assign title = 'Diagramm Infektionsrisiko mit Covid 19 in ' | append: page.title %}

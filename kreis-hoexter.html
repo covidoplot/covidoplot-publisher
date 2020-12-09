@@ -18,17 +18,6 @@ title: "Kreis Höxter"
 </div>
 
 
-<div id="overview" class="card">
-    <h2 class="card-header">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
-    <figure class="figure">
-        <img src="/assets/plots/district-hoexter-overview.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt ein Übersicht der Verläufe.">
-        <figcaption class="figure-caption">
-            Bestätigte Fälle von Covid 19 im Kreis Höxter
-        </figcaption>
-    </figure>
-    {% include cc.html title = 'Diagramm Bestätigte Fälle von Covid-19 im Kreis Höxter (Übersicht)' %}
-</div>
-
 <div id="stacked" class="card">
     <h2 class="card-header">Wie viele Personen sind infiziert, genesen oder verstorben?</h2>
     <figure class="figure">
@@ -44,9 +33,10 @@ title: "Kreis Höxter"
     <figure class="figure">
         <img src="/assets/plots/district-hoexter-last_weeks_incidence.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt eine Übersicht der 7-Tage Inzidenz.">
         <figcaption class="figure-caption">
-            <p>Die Zahlen basieren auf dem Veröffentlichungstag der Fälle. Weil der Tag des Testergebnisses
-            nicht veröffentlicht wird, weichen sie in der Regel von den offiziellen Zahlen nach oben ab.
-            Dieses Diagramm steht daher unter Vorbehalt und soll vor allem den zeitlichen Verlauf zeigen.
+            <p>Die Berechnung von Covidoplot basiert auf dem Veröffentlichungstag der Fälle durch den Kreis Höxter.
+                Die amtliche entscheidende Feststellung der 7-Tage-Inzidenz erfolgt durch das Landeszentrum Gesundheit
+                Nordrhein-Westfalen (LZG.NRW). Beide Werte weichen leicht voneinander ab, weil das LZG einen Fall
+                früher oder später zählen kann.
         </figcaption>
     </figure>
     {% include cc.html title = 'Diagramm 7-Tage-Inzidenz im Kreis Höxter' %}
@@ -56,7 +46,7 @@ title: "Kreis Höxter"
 <div id="absolute" class="card">
     <h2 class="card-header">Wie vergleichen sich die Gemeinden in totalen Fallzahlen?</h2>
     <figure class="figure">
-        <img src="/assets/plots/district-hoexter-absolute-comparism.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+        <img src="/assets/plots/district-hoexter-absolute-comparison.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
         <figcaption class="figure-caption">Anzahl bestätigter Infektionen in den einzelnen Gemeinden des Kreises.</figcaption>
     </figure>
     {% include cc.html title = 'Diagramm Bestätigte Fälle von Covid-19 in einzelnen Gemeinden des Kreises Höxter (absolut)' %}
@@ -65,7 +55,7 @@ title: "Kreis Höxter"
 <div id="elative" class="card">
     <h2 class="card-header">Wie vergleichen sich die Gemeinden in Fallzahlen pro Kopf?</h2>
     <figure class="figure">
-        <img src="/assets/plots/district-hoexter-relative-comparism.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+        <img src="/assets/plots/district-hoexter-relative-comparison.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
         <figcaption class="figure-caption">Anzahl bestätigter Infektionen in den einzelnen Gemeinden des Kreises je 100.000 Einwohnern.</figcaption>
     </figure>
     {% include cc.html title = 'Diagramm Bestätigte Fälle von Covid-19 in einzelnen Gemeinden des Kreises Höxter (relativ)' %}
@@ -73,13 +63,24 @@ title: "Kreis Höxter"
 
 
 <div class="card" id="risc">
-    <h2 class="card-header">Wie hoch ist das Infektionsrisiko im Vergleich?</h2>
+    <h2 class="card-header">Wie hoch ist das Infektionsrisiko im Gemeindevergleich?</h2>
     <figure class="figure">
-        <img src="/assets/plots/district-hoexter-risc-comparism.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
+        <img src="/assets/plots/district-hoexter-risc-comparison.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Stackplot.">
         <figcaption class="figure-caption">Die Dichte der aktiv Infizierten in den einzelnen Gemeinden.</figcaption>
     </figure>
     {% include cc.html title = 'Diagramm Dichte an mit Covid-19 erkrankten in einzelnen Gemeinden des Kreises Höxter' %}
 </div>
+
+<div class="card" id="vertical-risc">
+    <h2 class="card-header">Wie hoch ist das Infektionsrisiko im Vergleich?</h2>
+    <figure class="figure">
+        <img src="/assets/plots/district-hoexter-vertical-risc-comparison.png" class="figure-img img-fluid rounded" alt="Das Diagramm zeigt einen Risikovergleich.">
+        <figcaption class="figure-caption">Risiko im Kreis Höxter im internationalen Vergleich</figcaption>
+    </figure>
+    {% assign title = 'Diagramm Infektionsrisiko mit Covid 19 im vertikalen Vergleich ' %}
+    {% include cc.html title = title %}
+</div>
+
 
 {% include large-table-kreis-hoexter.html %}
 
