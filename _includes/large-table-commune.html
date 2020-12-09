@@ -16,20 +16,32 @@
             {% assign table = site.data[id] %}
 
             {% for day in table offset:10 %}
-            {% if day.date contains 'Sat' or day.date contains 'Sun' %}
-            {% assign cls = "table-primary" %}
+            {% assign weekday  = day.date | date: '%w' %}
+            {% if weekday == '0' or weekday == '6' %}
+                {% assign cls = "table-primary" %}
+                {% assign cls1 = "table-primary" %}
             {% else %}
-            {% assign cls = "table-secondary" %}
+                {% assign cls = "table-secondary" %}
+                {% assign cls1 = "" %}
             {% endif %}
             <tr>
                 <td class="{{ cls }}">{{day.date | date: '%d. %B' }}</td>
-                <td>{{day.ill}}</td>
-                <td>{{day.recovered}}</td>
-                <td>{{day.dead}}</td>
-                <td class="table-secondary">{{day.confirmed}}</td>
+                <td class="{{ cls1 }}">{{day.ill}}</td>
+                <td class="{{ cls1 }}">{{day.recovered}}</td>
+                <td class="{{ cls1 }}">{{day.dead}}</td>
+                <td class="{{ cls }}">{{day.confirmed}}</td>
             </tr>
             {% endfor %}
             </tbody>
+            <thead class="thead-dark">
+            <tr>
+                <th>Datum</th>
+                <th>infektiös</th>
+                <th>genesen</th>
+                <th>verstorben</th>
+                <th>alle</th>
+            </tr>
+            </thead>
         </table>
     {% assign title = 'Tabelle Bestätigte Fälle von Covid-19 in ' | append: page.title  %}
     {% include cc.html title = title %}

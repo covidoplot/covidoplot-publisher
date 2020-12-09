@@ -1,5 +1,6 @@
 <div class="card" id="today">
-    {% assign current = site.data.district-hoexter.last %}
+    {% assign current = site.data.district-hoexter[-1] %}
+    {% assign previous = site.data.district-hoexter[-2] %}
     <table class="table table-bordered">
         <caption class="">Bestätigte Fälle im Kreis Höxter am {{ current.date | full_german_date }}</caption>
         <thead class="thead-dark">

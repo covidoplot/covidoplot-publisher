@@ -15,6 +15,124 @@ title: "Neuigkeiten"
 
 ## Neuigkeiten
 
+### Todesfall Steinheim
+
+    08. Dezember 2020
+
+Eine Person aus Steinheim verstarb im Alter von 87 Jahren. (Quelle: Pressemitteilung des Kreises).
+Es ist der 27. Todesfall im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von:
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66, 85, 86, 91, 92, 86, 89, 87, 89
+
+### Todesfall Höxter
+
+    02. Dezember 2020
+
+Eine Person aus Höxter verstarb im Alter von 87 Jahren. (Quelle: Pressemitteilung des Kreises).
+Es ist der 26. Todesfall im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von:
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66, 85, 86, 91, 92, 86, 89, 87
+
+### Todesfälle Borgentreich und Warburg
+
+    01. Dezember 2020
+    
+Zwei Personen aus Borgentreich und Warburg verstarb im Alter von 86 und 89 Jahren. (Quelle: Pressemitteilung des Kreises).
+Es sind der 24. und 25. Todesfall im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66, 85, 86, 91, 92, 86, 89
+
+### Todesfall Borgentreich
+
+    26. November 2020
+    
+Eine Person aus Borgentreich verstarb im Alter von 92 Jahren. (Quelle: Pressemitteilung des Kreises).
+Es ist der 23. Todesfall im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66, 85, 86, 91, 92
+
+### Todesfall Steinheim
+
+    25. November 2020
+    
+Eine Person aus Steinheim verstarb im Alter von 91 Jahren. (Quelle: Pressemitteilung des Kreises).
+Es ist der 22. Todesfall im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66, 85, 86, 91
+
+### Todesfall Steinheim
+
+    24. November 2020
+    
+Eine Person aus Steinheim verstarb im Alter von 86 Jahren. (Quelle: Pressemitteilung des Kreises).
+Es ist der 21. Todesfall im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66, 85, 86
+
+### Massenausbruch im Heilpädagogischen Zentrum in Warburg
+
+    22. November 2020
+    
+Im Heilpädagogischen Zentrum in Warburg und in einigen Außenwohngruppen
+in Warburg und möglicherweise auch in Willebadessen ist es zu einem
+Ausbruch gekommen. Innerhalb von fünf Tagen wurden in Warburg und 
+Willebadessen zusammen 67 neue Infektionen gemeldet. 
+
+Quellen: 
+
+* [NW](https://www.nw.de/lokal/kreis_hoexter/warburg/22903205_Corona-Ausbruch-in-der-Warburger-Behindertenhilfe.html)
+* [HPZ](https://www.hpz-st-laurentius.de/)
+
+### Todesfall Beverungen
+
+    10. November 2020
+    
+Eine Person aus Beverungen verstarb im Alter von 85 Jahren.
+Sie wohnte noch in der eigenen Wohnung (Quelle: Pressemmitteilung des Kreises).
+Es ist der 20. Todesfall im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von: 
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66, 85
+
+### Massenausbruch in einem Betrieb in Brakel
+
+    3. November 2020
+    
+Laut [Radio Hochstift](https://www.radiohochstift.de/nachrichten/kreis-hoexter/detailansicht-hx.html?tx_news_pi1%5Bnews%5D=708157&cHash=d109805d7922f029054db8155d3cf7c2)
+ist es bei der Fritz Becker GmbH in Brakel zu einem Ausbruch von bisher 30 Infektionsfällen gekommen.
+
+### Der zweite Lockdown tritt in Kraft
+
+    2. November 2020
+    
+Bund und Länder haben einen Teillockdown beschlossen, der von heute an vorerst bis zum Monatsende gilt. 
+[Folgende Regeln treten in Kraft.](https://www.zdf.de/nachrichten/politik/coronavirus-lockdown-november-100.html)
+
+
+### Corona-Fälle bei Bad Driburger "Gemeinschaft der Seligpreisungen"
+
+    26. Oktober 2020
+    
+Wie der Leiter des Pastoralverbunds Hubertus Rath hat gegenüber [Radio Hochstift bestätigte](https://www.radiohochstift.de/nachrichten/kreis-hoexter/detailansicht-hx.html?tx_news_pi1%5Bnews%5D=706427&cHash=281ea411c16cd3e45474d11c70375938)
+ist es im Orden der „Gemeinschaft der Seligpreisungen“ zu Infektionsfällen gekommen. Es handelt sich hierbei
+nicht um die allgemein bekannten "Rosa Schwestern", sondern um eine kleine Gemeinschaft in der Nachbarschaft
+des Gymnasiums St. Xaver. Über die Zahl der Fälle wurde keine Auskunft gegeben. Am 19. Oktober fiel ein stärkerer
+Sprung von 7 Fällen in der Statistik auf.
+
+### Massenausbruch in Steinheim
+
+    25. Oktober 2020
+    
+In Steinheim ist von einer niedrigen Ausgangslage aus zu einem starken Anstieg der Fälle gekommen.
+Zu diesem Zeitpunkt lassen sich ca. 30 Infektionsfälle des Wochenendes auf eine Veranstaltung 
+zurück führen, so [Bürgermeister Carsten Torke gegenüber Radio Hochstift](https://www.radiohochstift.de/nachrichten/kreis-hoexter/detailansicht-hx.html?tx_news_pi1%5Bnews%5D=706159&cHash=041397d3b77c309a1c0f9d742f94c412).
+
 ### Gefährdungsstufen I und II werden festgestellt 
 
     25. Oktober 2020
@@ -29,7 +147,7 @@ stellt der Kreis Höxter für Montag den 26. Oktober die [Gefährdungsstufen I u
 Das Westfalenblatt veröffentlich einen [Nachruf](https://www.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4296181-Corona-und-die-Folgen-Hoexteraner-starb-ohne-Vorerkrankung-Kampf-nach-189-Tagen-verloren)
 auf den Anfang Oktober verstorbenen Höxteraner Johannes Mellwig.
 
-### Todesfall in Höxter 
+### Todesfall Höxter 
 
     8. Oktober 2020
     
@@ -53,9 +171,9 @@ Es kam jetzt insbesondere in Kindergärten und Schulen zu Infektionen.
 Vereinzelt wurden Einrichtungen geschlossen.
 
 Diese Fortsetzung der zweiten Welle sinkt heute auf unter neun
-aktiv Erkrankte im Kreis Höxter. Die 7-Tages-Inzidenz ist aktuell
+aktiv Erkrankte im Kreis Höxter. Die 7-Tage-Inzidenz ist aktuell
 die niedrigste in NRW. Es wirkt wie die Ruhe vor dem Sturm, da 
-das Wetter jetzt deutlich kühler und fechter wird, während die 
+das Wetter jetzt deutlich kühler und feuchter wird, während die 
 Infektionen fast überall in Europa schon seit Wochen steigen.
     
 ### Zweite Welle geht erstmals zurück
@@ -77,7 +195,7 @@ und Warburg kleinere Herde ausbildeten.
 Der letzte Krankheitsfall im Kreis Höxter in Nieheim ist genesen.
 Damit hat der Kreis Höxter erstmals keine bekannten aktiven Fälle mehr.
 
-### Todesfall in Höxter
+### Todesfall Höxter
 
     19. Juni 2020
 
@@ -87,7 +205,7 @@ Das ist der erste Todesfall in Bad Driburg und der 18. im Kreis Höxter.
 Die bisherigen Fälle starben im Alter von: 
 80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86
 
-### Todesfall in Höxter
+### Todesfall Höxter
 
     23. Mai 2020
     
@@ -112,7 +230,7 @@ Quellen:
 * [Radio Hochstift](https://www.radiohochstift.de/nachrichten/paderborn-hoexter/detailansicht/neun-bewohner-im-bad-driburger-clemensheim-mit-covid-19-infinziert.html)
 * [Westfalen-Blatt](https://m.westfalen-blatt.de/OWL/Kreis-Hoexter/Hoexter/4205037-Insgesamt-mittlerweile-neun-bestaetigte-Infektionen-im-Bad-Driburger-Clemensheim-Weitere-Corona-Faelle-in-Fluechtlingsunterkunft)
 
-### Todesfall in Höxter
+### Todesfall Höxter
 
     19. Mai 2020
     
