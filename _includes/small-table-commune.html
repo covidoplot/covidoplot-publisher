@@ -4,39 +4,39 @@
     {% assign current = data[-1] %}
     {% assign previous = data[-2] %}
     <h2 class="card-header">{{ current.date | full_german_date }}</h2>
-    <table class="table table-bordered">
+    <table class="table table-bordered table-sm">
         <caption class=""><strong>Bestätigte Fälle in {{ page.title}} am {{ current.date | full_german_date }}</strong>
             {% include table-legend.html %}
         </caption>
         <thead class="thead-dark">
-        <tr>
-            <th class="">infektiös</th>
-            <th class="">genesen</th>
-            <th class="">verstorben</th>
-            <th class="">alle <span class="up">neue</span></th>
-            <th class="">Inzidenz</th>
-        </tr>
+            <tr>
+                <th class="text-right">infektiös</th>
+                <th class="text-right">genesen</th>
+                <th class="text-right">verstorben</th>
+                <th class="text-right">alle <span class="up">neue</span></th>
+                <th class="text-right"><em>Inzidenz</em></th>
+            </tr>
         </thead>
         <tbody>
         <tr>
-            <td class="table-secondary">{{current.ill}}
+            <td class="table-secondary td-number">{{current.ill}}
                 {% assign diff = current.ill | minus: previous.ill %}
                 {% include diff.html %}
             </td>
-            <td class="table-secondary">{{current.recovered}}
+            <td class="table-secondary td-number">{{current.recovered}}
                 {% assign diff = current.recovered | minus: previous.recovered %}
                 {% include diff.html %}
             </td>
-            <td class="table-secondary">{{current.dead}}
+            <td class="table-secondary td-number">{{current.dead}}
                 {% assign diff = current.dead | minus: previous.dead %}
                 {% include diff.html %}
             </td>
-            <td class="table-primary"><strong>{{current.confirmed}}
+            <td class="table-primary td-number"><strong>{{current.confirmed}}
                 {% assign diff = current.confirmed | minus: previous.confirmed %}
                 {% include diff.html %}
             </strong>
             </td>
-            <td class="table-secondary">
+            <td class="table-secondary td-number">
                 <em>{{ current.last_weeks_incidence | round: 1 }}
                 {% assign diff = current.last_weeks_incidence | minus: previous.last_weeks_incidence | round: 1 %}
                 {% include diff.html %}

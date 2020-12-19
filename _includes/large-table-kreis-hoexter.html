@@ -1,14 +1,18 @@
 <div class="card">
     <h2 class="card-header" id="numbers">Wie sehen die Zahlen aus?</h2>
     <table class="table table-bordered table-hover table-sm">
-        <caption> Bestätigte Fälle im Kreis Höxter </caption>
-        <thead>
+        <caption class="">
+            <strong>Bestätigte Fälle im Kreis Höxter</strong>
+            {% include table-legend.html %}
+        </caption>
+        <thead class="thead-dark thead-sticky">
         <tr>
-            <th class="table-dark">Datum</th>
-            <th class="table-dark">infektiös</th>
-            <th class="table-dark">genesen</th>
-            <th class="table-dark">verstorben</th>
-            <th class="table-dark">alle</th>
+            <th class="">Datum</th>
+            <th class="">infektiös</th>
+            <th class="">genesen</th>
+            <th class="">verstorben</th>
+            <th class="">alle</th>
+            <th class="text-right">Inzidenz</th>
         </tr>
         </thead>
         <tbody>
@@ -23,21 +27,14 @@
         {% endif %}
         <tr>
             <td class="{{ cls }}">{{ day.date | date: '%d. %B' }}</td>
-            <td class="{{ cls1 }}">{{day.ill}}</td>
-            <td class="{{ cls1 }}">{{day.recovered}}</td>
-            <td class="{{ cls1 }}">{{day.dead}}</td>
-            <td class="{{ cls }}">{{day.confirmed}}</td>
+            <td class="{{ cls1 }} td-number">{{day.ill}}</td>
+            <td class="{{ cls1 }} td-number">{{day.recovered}}</td>
+            <td class="{{ cls1 }} td-number">{{day.dead}}</td>
+            <td class="table-primary td-number">{{day.confirmed}}</td>
+            <td class="table-secondary td-number">{{day.last_weeks_incidence | round:1 }}</td>
         </tr>
         {% endfor %}
         </tbody>
-        <thead class="thead-dark">
-        <tr>
-            <th>Datum</th>
-            <th>infektiös</th>
-            <th>genesen</th>
-            <th>verstorben</th>
-            <th>alle</th>
-        </tr>
         </thead>
     </table>
     {% include cc.html title = 'Tabelle Bestätigte Fälle von Covid-19 im Kreis Höxter' %}

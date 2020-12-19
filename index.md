@@ -5,15 +5,40 @@ title: "Neuigkeiten"
 
 {% include small-table-index.html %}
 
-<figure class="card figure shadow mb-5 mt-4 p-3" id="map">
-  <img src="/assets/plots/district-hoexter-last_weeks_incidence-map.png" class="figure-img img-fluid rounded" alt="Karte der Wocheninzidenzen im Kreis Höxter">
-  <figcaption class="figure-caption p-3">Morgens steht zuerst die vom Kreis Höxter berechnete Wocheninzidenz
-  zur Verfügung. Diese ist als vorläufig gekennzeichnet, bis die amtliche Inzidenz des  
-  Landeszentrum Gesundheit Nordrhein-Westfalen (LZG) zur Verfügung steht.
-  </figcaption>
-</figure>
+<div id="map" class="card">
+    <figure class="figure" id="map">
+      <img src="/assets/plots/district-hoexter-last_weeks_incidence-map.png" 
+        class="figure-img img-fluid rounded" alt="Karte der Wocheninzidenzen im Kreis Höxter">
+      <figcaption class="figure-caption p-3">Morgens steht zuerst die vom Kreis Höxter berechnete Wocheninzidenz
+      zur Verfügung. Diese ist als vorläufig gekennzeichnet, bis die amtliche Inzidenz des  
+      Landeszentrum Gesundheit Nordrhein-Westfalen (LZG) zur Verfügung steht.
+      </figcaption>
+    </figure>
+</div>
 
 ## Neuigkeiten
+
+### Todesfall Willebadessen
+
+    10. Dezember 2020
+
+Eine Person aus Willebadessen verstarb im Alter von 77 Jahren. (Quelle: Pressemitteilung des Kreises).
+Es ist der 29. Todesfall im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von:
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66, 85, 86, 91, 92, 86, 89, 87, 89, 82, 77
+
+
+### Todesfall Brakel
+
+    10. Dezember 2020
+
+Eine Person aus Brakel verstarb im Alter von 82 Jahren. (Quelle: Pressemitteilung des Kreises).
+Es ist der 28. Todesfall im Kreis Höxter.
+
+Die bisherigen Fälle starben im Alter von:
+80, 75, 82, 75, 86, 87, 96, 95, 64, 78, 84, 77, 78, 83, 82, 78, 84, 86, 66, 85, 86, 91, 92, 86, 89, 87, 89, 82
+
 
 ### Todesfall Steinheim
 

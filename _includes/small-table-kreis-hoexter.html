@@ -4,16 +4,16 @@
         <caption class=""><strong>Bestätigte Fälle im Kreis Höxter am {{ date | full_german_date }}</strong>
             {% include table-legend.html %}
         </caption>
-        <thead class="table-dark">
-        <tr class="">
-            <th colspan="1" class="">Gemeinde</th>
-            <th colspan="2" class="" >infektiös</th>
-            <th colspan="2" class="">genesen</th>
-            <th colspan="2" class="">verstorben</th>
-            <th colspan="1" class="">alle</th>
-            <th colspan="1" class="td-number"><small>neue</small></th>
-            <th colspan="2" class=""><em>Inzidenz</em></th>
-        </tr>
+        <thead class="thead-dark thead-sticky">
+            <tr class="">
+                <th colspan="1" class="">Gemeinde</th>
+                <th colspan="2" class="text-right" >infektiös</th>
+                <th colspan="2" class="text-right">genesen</th>
+                <th colspan="2" class="text-right">verstorben</th>
+                <th colspan="1" class="text-right">alle</th>
+                <th colspan="1" class="text-right"><small>neue</small></th>
+                <th colspan="2" class="text-right"><em>Inzidenz</em></th>
+            </tr>
         </thead>
         <tbody>
         {% assign sorted = site.data.configuration.names.communes | sort %}
@@ -57,7 +57,7 @@
         </tbody>
         <tfoot class="">
         <tr class="">
-            <th scope="row" class="table-primary">Insgesamt</th>
+            <th scope="row" class="table-primary text-right">Insgesamt</th>
             <td class="table-primary td-number"><strong>{{current.ill}}</strong></td>
             <td class="table-primary td-number"><strong>
                 {% assign diff = current.ill | minus: previous.ill %}

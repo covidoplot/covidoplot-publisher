@@ -1,15 +1,19 @@
 <div class="card" id="numbers">
     <h2 class="card-header">Wie sehen die Zahlen aus?</h2>
         <table class="table table-bordered table-hover table-sm">
-            <caption class=""><strong>Bestätigte Fälle in {{ page.title }}</strong></caption>
-            <thead class="thead-dark">
-            <tr>
-                <th>Datum</th>
-                <th>infektiös</th>
-                <th>genesen</th>
-                <th>verstorben</th>
-                <th>alle</th>
-            </tr>
+            <caption class="">
+                <strong>Bestätigte Fälle in {{ page.title }}</strong>
+                {% include table-legend.html %}
+            </caption>
+            <thead class="thead-dark thead-sticky">
+                <tr>
+                    <th>Datum</th>
+                    <th class="text-right">infektiös</th>
+                    <th class="text-right">genesen</th>
+                    <th class="text-right">verstorben</th>
+                    <th class="text-right">alle</th>
+                    <th class="text-right">Inzidenz</th>
+                </tr>
             </thead>
             <tbody>
             {% assign id = 'commune-' | append: page.ident %}
@@ -26,22 +30,14 @@
             {% endif %}
             <tr>
                 <td class="{{ cls }}">{{day.date | date: '%d. %B' }}</td>
-                <td class="{{ cls1 }}">{{day.ill}}</td>
-                <td class="{{ cls1 }}">{{day.recovered}}</td>
-                <td class="{{ cls1 }}">{{day.dead}}</td>
-                <td class="{{ cls }}">{{day.confirmed}}</td>
+                <td class="{{ cls1 }} td-number">{{day.ill}}</td>
+                <td class="{{ cls1 }} td-number">{{day.recovered}}</td>
+                <td class="{{ cls1 }} td-number">{{day.dead}}</td>
+                <td class="table-primary td-number">{{day.confirmed}}</td>
+                <td class="table-secondary td-number">{{day.last_weeks_incidence | round:1 }}</td>
             </tr>
             {% endfor %}
             </tbody>
-            <thead class="thead-dark">
-            <tr>
-                <th>Datum</th>
-                <th>infektiös</th>
-                <th>genesen</th>
-                <th>verstorben</th>
-                <th>alle</th>
-            </tr>
-            </thead>
         </table>
     {% assign title = 'Tabelle Bestätigte Fälle von Covid-19 in ' | append: page.title  %}
     {% include cc.html title = title %}

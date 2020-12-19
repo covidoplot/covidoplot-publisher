@@ -14,7 +14,7 @@
     font-size: 1rem;
     margin-left: .1rem;
     font-style: normal;
-    float:left;
+    float:right;
 }
 
 .diff-down:before {
@@ -22,7 +22,7 @@
     font-size: 1rem;
     margin-left: .1rem;
     font-style: normal;
-    float:left;
+    float:right;
 }
 
 .card {
@@ -30,10 +30,14 @@
     box-shadow: $box-shadow;
 }
 
-.card .figure-caption {
-    padding: 3rem;
+.card .figure {
+    text-align: center;
 }
 
+.card .figure .figure-caption {
+    text-align: left;
+    padding: 1rem;
+}
 .card .table caption {
     padding: 1rem;
 }
@@ -62,5 +66,28 @@
     .btn {
     }
 }
+
+// sticky table headers
+.thead-sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 1px;
+}
+
+// Fix for google chrome
+
+.thead-sticky th {
+    @extend .thead-sticky;
+}
+
+.thead-dark th {
+    @extend .thead-dark;
+}
+
+
+
 
 
